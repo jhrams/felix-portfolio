@@ -1,0 +1,46 @@
+nav {
+  background-color: #F3EFEB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  font-size: 16px;
+  color: #181D20;
+  padding: 16px 24px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #181D20;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:not(:first-child) {
+  margin-left: 16px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #181D20;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+

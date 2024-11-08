@@ -10,10 +10,12 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
   return (
     <footer>
-      <p>{title}</p>
-      <PageLinks />
+      <p className="title">{title}</p>
+      <div className="links-container">
+        <PageLinks />
+      </div>
       <div className="container">
-        <p>{email}</p>
+        <strong>{email}</strong>
         <p>{copyright}</p>
       </div>
     </footer>

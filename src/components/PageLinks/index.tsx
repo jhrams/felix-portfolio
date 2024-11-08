@@ -2,7 +2,7 @@ import "./styles.css"
 
 const PageLinks = () => {
   return (
-    <div className="links">
+    <div>
       <a href="#home">Home</a>
       <a href="#structure">Structure</a>
       <a href="#contact">Contact</a>

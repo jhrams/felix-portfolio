@@ -1,20 +1,17 @@
+import PageLinks from "../PageLinks";
 import "./styles.css"
 
 interface NavProps {
-    title: string;
+  title: string;
 }
 
 const Nav: React.FC<NavProps> = ({ title }) => {
   return (
     <nav>
-        <p>{title}</p >
-        <div className="links">
-          <a href="#home">Home</a>
-          <a href="#structure">Structure</a>
-          <a href="#contact">Contact</a>
-        </div>
+      <p>{title}</p >
+      <PageLinks />
     </nav>
   );
-}; 
+};
 
 export default Nav;

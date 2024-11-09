@@ -1,4 +1,6 @@
 import PageLinks from "../PageLinks";
+import useWindowWidth from '../../hooks/useWindowWidth';
+
 import "./styles.css"
 
 interface FooterProps {
@@ -8,17 +10,38 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
+  const windowWidth = useWindowWidth();
+  const isMobile = windowWidth < 768; // Example breakpoint for mobile
+
   return (
     <footer>
-      <p className="title">{title}</p>
-      <div className="links-container">
-        <PageLinks />
-      </div>
-      <div className="container">
-        <strong>{email}</strong>
-        <p>{copyright}</p>
-      </div>
-    </footer>
+      {isMobile ? (
+        <>
+          <div className="row">
+            <p className="title">{title}</p>
+            <div className="links-container">
+              <PageLinks />
+            </div>
+          </div>
+          <div className="container">
+            <strong>{email}</strong>
+            <p>{copyright}</p>
+          </div>
+        </>
+      ) : (
+        <>
+          <p className="title">{title}</p>
+          <div className="links-container">
+            <PageLinks />
+          </div>
+          <div className="container">
+            <strong>{email}</strong>
+            <p>{copyright}</p>
+          </div>
+        </>
+
+      )}
+    </footer >
   )
 }
 

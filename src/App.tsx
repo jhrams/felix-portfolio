@@ -1,13 +1,12 @@
 import './App.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import { NAV_TITLE, FOOTER_TITLE, COPYRIGHT, EMAIL } from './copies'
+import { NAV_TITLE, FOOTER_TITLE, COPYRIGHT, EMAIL, NAV_MOBILE_TITLE } from './copies'
 
 function App() {
   return (
     <>
-      <Nav title={NAV_TITLE} />
-      <div>hsdsdsdi</div>
+      <Nav mobileTitle={NAV_MOBILE_TITLE} title={NAV_TITLE} />
       <div>hsdsdsdi</div>
       <div>hsdsdsdi</div>
       <div>hsdsdsdi</div>

@@ -1,14 +1,19 @@
 import PageLinks from "../PageLinks";
+import useWindowWidth from '../../hooks/useWindowWidth';
 import "./styles.css"
 
 interface NavProps {
+  mobileTitle: string;
   title: string;
 }
 
-const Nav: React.FC<NavProps> = ({ title }) => {
+const Nav: React.FC<NavProps> = ({ mobileTitle, title }) => {
+  const windowWidth = useWindowWidth();
+  const isMobile = windowWidth < 768; // Example breakpoint for mobile
+
   return (
     <nav>
-      <p>{title}</p >
+      <p>{isMobile ? <strong>{mobileTitle}</strong> : title}</p >
       <PageLinks />
     </nav>
   );

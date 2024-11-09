@@ -4,4 +4,10 @@ const EMAIL: string = 'felix.lau.design@gmail.com';
 const COPYRIGHT: string = '© 2024 Felix Lau';
 const NAV_MOBILE_TITLE: string = 'F.D';
 
-export { NAV_TITLE, FOOTER_TITLE, EMAIL, COPYRIGHT, NAV_MOBILE_TITLE };
+export {
+  NAV_TITLE,
+  FOOTER_TITLE,
+  EMAIL,
+  COPYRIGHT,
+  NAV_MOBILE_TITLE
+};

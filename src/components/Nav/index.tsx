@@ -9,11 +9,11 @@ interface NavProps {
 
 const Nav: React.FC<NavProps> = ({ mobileTitle, title }) => {
   const windowWidth = useWindowWidth();
-  const isMobile = windowWidth < 768; // Example breakpoint for mobile
+  const isXlarge = windowWidth >= 1440; // Example breakpoint for x-large screens
 
   return (
     <nav>
-      <p>{isMobile ? <strong>{mobileTitle}</strong> : title}</p >
+      <p>{isXlarge ? title : <strong>{mobileTitle}</strong>}</p >
       <PageLinks />
     </nav>
   );

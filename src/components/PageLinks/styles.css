@@ -19,7 +19,8 @@ a::after {
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-a:hover::after {
+a:hover::after,
+a.active::after {
   width: 100%;
   left: 0;
 }

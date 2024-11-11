@@ -7,9 +7,9 @@ const PageLinks = () => {
 
   return (
     <div>
-      <a href="/" className={currentPath === '/' ? 'active' : ''}>Home</a>
-      <a href="/structure" className={currentPath === '/structure' ? 'active' : ''}>Structure</a>
-      <a href="/contact" className={currentPath === '/contact' ? 'active' : ''}>Contact</a>
+      <a href="/" className={`page-link${currentPath === '/' ? ' active' : ''}`}>Home</a>
+      <a href="/structure" className={`page-link${currentPath === '/structure' ? ' active' : ''}`}>Structure</a>
+      <a href="/contact" className={`page-link${currentPath === '/contact' ? ' active' : ''}`}>Contact</a>
     </div>
   );
 }

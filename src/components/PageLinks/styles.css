@@ -1,14 +1,14 @@
-a {
+a.page-link {
   color: #181D20;
   text-decoration: none;
   position: relative;
 }
 
-a:not(:first-child) {
+a.page-link:not(:first-child) {
   margin-left: 16px;
 }
 
-a::after {
+a.page-link::after {
   content: '';
   position: absolute;
   width: 0;
@@ -19,8 +19,8 @@ a::after {
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-a:hover::after,
-a.active::after {
+a.page-link:hover::after,
+a.page-link.active::after {
   width: 100%;
   left: 0;
 }

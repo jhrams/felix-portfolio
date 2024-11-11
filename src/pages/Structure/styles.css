@@ -13,12 +13,18 @@
   font-size: 61px;
 }
 
+.project-trial-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .project-trial-button-container>* {
   margin-bottom: 24px;
 }
 
 .retainer-box {
-  width: 1080px;
+  width: 75%;
   color: white;
   padding: 40px 32px;
   background: lightgray linear-gradient(155deg, #241D16 67%, rgba(36, 29, 22, 0.00) 175.32%) 50% / cover no-repeat;
@@ -75,7 +81,7 @@
 
 .project-trial-container {
   display: flex;
-  width: 1080px;
+  width: 75%;
 }
 
 .single-project-box,
@@ -155,4 +161,57 @@
   color: white;
   text-decoration: none;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .structure-page {
+    align-items: flex-start;
+  }
+
+  .structure-title {
+    font-size: 20px;
+  }
+
+  .retainer-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .retainer-box,
+  .project-trial-container {
+    width: 100%;
+  }
+
+  .project-trial-container {
+    flex-direction: column;
+  }
+
+  .single-project-box,
+  .trial-box {
+    border: none;
+  }
+
+  .single-project-box {
+    border-bottom: 1px solid #241D16;
+  }
+
+  .single-project-title-container,
+  .trial-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .structure-page,
+  .retainer-title,
+  .retainer-description-1,
+  .single-project-title,
+  .single-project-description-1,
+  .single-project-description-2,
+  .single-project-description-3,
+  .trial-title,
+  .trial-description-1,
+  .trial-description-2,
+  .structure-button {
+    font-size: 16px;
+  }
 }

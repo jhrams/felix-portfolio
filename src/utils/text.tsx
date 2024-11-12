@@ -1,4 +1,4 @@
-export const renderText = (text: string) => {
+export const renderText = (text: string): (string | JSX.Element)[] => {
   const parts = text.split(/(<strong>.*?<\/strong>|<span>.*?<\/span>)/g);
 
   return parts.map((part, index) => {
@@ -11,6 +11,5 @@ export const renderText = (text: string) => {
     }
 
     return part;
-
   });
 };

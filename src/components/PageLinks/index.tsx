@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import "./styles.css"
 
-const PageLinks = () => {
+const PageLinks: React.FC = (): JSX.Element => {
   const location = useLocation();
   const currentPath = location.pathname;
 

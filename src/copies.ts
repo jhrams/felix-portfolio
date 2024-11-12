@@ -55,6 +55,7 @@ const TRIAL_MODEL: TrialModel = {
 }
 
 const GET_IN_TOUCH: string = 'Get in touch';
+const CONTACT_DESCRIPTION: string = '<strong>Spend 30 minutes</strong> discussing your businesses needs and getting to know each other.'
 
 export {
   NAV_TITLE,
@@ -66,5 +67,6 @@ export {
   RETAINER_MODEL,
   SINGLE_PROJECT_MODEL,
   TRIAL_MODEL,
-  GET_IN_TOUCH
+  GET_IN_TOUCH,
+  CONTACT_DESCRIPTION
 };

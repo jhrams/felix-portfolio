@@ -24,3 +24,9 @@ a.page-link.active::after {
   width: 100%;
   left: 0;
 }
+
+@media (max-width: 1439px) {
+  nav a.page-link:not(:first-child) {
+    margin-left: 24px;
+  }
+}

@@ -11,7 +11,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
   const windowWidth = useWindowWidth();
-  const isMobile = windowWidth < 768; // Example breakpoint for mobile
+  const isMobile = windowWidth <= 1023; // Example breakpoint for mobile
 
   return (
     <footer>

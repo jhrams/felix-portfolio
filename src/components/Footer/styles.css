@@ -58,4 +58,8 @@ footer {
   .links-container {
     flex: none;
   }
+
+  footer>*:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }

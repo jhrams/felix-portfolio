@@ -8,9 +8,9 @@ const Contact: React.FC = () => {
   const { navbarHeight } = useNavbarHeight();
 
   return (
-    <div>
+    <div style={{ marginTop: `${navbarHeight}px` }}>
       <div className='contact-title-container'>
-        <h1 className='contact-title' style={{ marginTop: `${navbarHeight}px` }}>{GET_IN_TOUCH}</h1>
+        <h1 className='contact-title'>{GET_IN_TOUCH}</h1>
         <p className='contact-description'>{renderText(CONTACT_DESCRIPTION)}</p>
       </div>
       <InlineWidget url="https://calendly.com/felix-lau" />

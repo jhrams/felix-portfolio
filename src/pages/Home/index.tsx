@@ -1,3 +1,4 @@
+import { useNavbarHeight } from '../../context/NavbarHeightContext';
 import {
   WHY_FRACTIONAL,
   VIEW_RECENT_WORK,
@@ -13,10 +14,27 @@ import {
 import './styles.css'
 
 const Home: React.FC = () => {
+  const { navbarHeight } = useNavbarHeight();
+
   return (
-    <div>
-      <h1>Home</h1>
-      <p>This is the Home page.</p>
+    <div style={{ marginTop: `${navbarHeight}px` }}>
+      <div className='about-container'>
+        <p>{WHY_FRACTIONAL.title}</p>
+        <div className='reasons-container'>
+          <div className='reason-container'>
+            <p className='reason-title'></p>
+            <p className='reason-description'></p>
+          </div>
+          <div className='reason-container'>
+            <p className='reason-title'></p>
+            <p className='reason-description'></p>
+          </div>
+          <div className='reason-container'>
+            <p className='reason-title'></p>
+            <p className='reason-description'></p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

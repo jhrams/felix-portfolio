@@ -134,6 +134,7 @@
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
+  line-height: 19px;
 }
 
 .trial-title-button-container>*:not(:last-child),
@@ -148,6 +149,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+}
+
+.single-project-description-1,
+.single-project-description-2,
+.single-project-description-3,
+.trial-description-1,
+.trial-description-2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.85;
 }
 
 .structure-button-container {
@@ -231,7 +244,9 @@
     padding: 32px 16px;
   }
 
-  .retainer-title-button {
+  .retainer-title-button,
+  .single-project-title-button,
+  .trial-title-button {
     padding: 4px 8px;
   }
 
@@ -267,6 +282,10 @@
   .single-project-box>*:not(:last-child),
   .trial-box>*:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  .trial-box {
+    border-bottom: 1px solid #241D16;
   }
 }
 
@@ -333,18 +352,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-  }
-
-  .single-project-description-1,
-  .single-project-description-2,
-  .single-project-description-3,
-  .trial-description-1,
-  .trial-description-2 {
-    font-family: Satoshi;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
   }
 
   .single-project-box>*:not(:last-child),

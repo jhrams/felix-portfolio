@@ -14,8 +14,8 @@ const Structure: React.FC = () => {
   const { navbarHeight } = useNavbarHeight();
 
   return (
-    <div className='structure-page'>
-      <h1 className='structure-title' style={{ marginTop: `${navbarHeight}px` }}>{STRUCTURE_TITLE}</h1>
+    <div className='structure-page' style={{ marginTop: `${navbarHeight}px` }}>
+      <h1 className='structure-title'>{STRUCTURE_TITLE}</h1>
       <div className='project-trial-button-container'>
         <div className='retainer-box'>
           <div className='retainer-title-container'>

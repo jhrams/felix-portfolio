@@ -254,3 +254,93 @@
     margin-bottom: 16px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .structure-title {
+    font-family: Literata;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 47px;
+    /* 120.513% */
+    letter-spacing: -0.2px;
+  }
+
+  .retainer-box,
+  .project-trial-container {
+    width: 100%;
+  }
+
+  .project-trial-container {
+    flex-direction: column;
+  }
+
+  .project-trial-button-container>* {
+    margin-bottom: 0px;
+  }
+
+  .project-trial-button-container>*:last-child {
+    margin: 24px;
+  }
+
+  .single-project-box,
+  .trial-box {
+    border: none;
+  }
+
+  .single-project-box {
+    border-bottom: 1px solid #241D16;
+  }
+
+  .retainer-title {
+    font-family: Literata;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .retainer-description-1 {
+    font-family: Literata;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 16px 0;
+  }
+
+  .retainer-description-2 {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .single-project-title,
+  .trial-title {
+    font-family: Literata;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .single-project-description-1,
+  .single-project-description-2,
+  .single-project-description-3,
+  .trial-description-1,
+  .trial-description-2 {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .single-project-box>*:not(:last-child),
+  .trial-box>*:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+}

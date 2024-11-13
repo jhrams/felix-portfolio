@@ -36,7 +36,7 @@
 .retainer-title-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .retainer-title {
@@ -44,6 +44,8 @@
   font-size: 39px;
   font-style: normal;
   font-weight: 300;
+  line-height: 47px;
+  letter-spacing: -0.2px;
 }
 
 .retainer-title-button-container {
@@ -62,6 +64,7 @@
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
+  line-height: 19px;
 }
 
 
@@ -219,12 +222,17 @@
   .trial-description-2,
   .structure-button {
     font-size: 16px;
+    line-height: 24px;
   }
 
   .retainer-box,
   .single-project-box,
   .trial-box {
     padding: 32px 16px;
+  }
+
+  .retainer-title-button {
+    padding: 4px 8px;
   }
 
   .project-trial-button-container>* {
@@ -253,6 +261,7 @@
 
   .retainer-description-2 {
     font-size: 13px;
+    line-height: 19px;
   }
 
   .single-project-box>*:not(:last-child),
@@ -261,7 +270,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 481px) and (max-width: 1023px) {
   .retainer-box,
   .project-trial-container {
     width: 100%;
@@ -286,6 +295,10 @@
 
   .single-project-box {
     border-bottom: 1px solid #241D16;
+  }
+
+  .retainer-title-container {
+    align-items: center;
   }
 
   .retainer-title {

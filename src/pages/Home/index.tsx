@@ -10,6 +10,7 @@ import {
   FAQ,
   FRACTIONAL
 } from '../../copies';
+import { renderText } from '../../utils/text';
 
 import './styles.css'
 
@@ -19,19 +20,19 @@ const Home: React.FC = () => {
   return (
     <div style={{ marginTop: `${navbarHeight}px` }}>
       <div className='about-container'>
-        <p>{WHY_FRACTIONAL.title}</p>
+        <p className='about-title'>{renderText(WHY_FRACTIONAL.title)}</p>
         <div className='reasons-container'>
           <div className='reason-container'>
-            <p className='reason-title'></p>
-            <p className='reason-description'></p>
+            <p className='reason-title'>{WHY_FRACTIONAL.title1}</p>
+            <p className='reason-description'>{WHY_FRACTIONAL.description1}</p>
           </div>
           <div className='reason-container'>
-            <p className='reason-title'></p>
-            <p className='reason-description'></p>
+            <p className='reason-title'>{WHY_FRACTIONAL.title2}</p>
+            <p className='reason-description'>{WHY_FRACTIONAL.description2}</p>
           </div>
           <div className='reason-container'>
-            <p className='reason-title'></p>
-            <p className='reason-description'></p>
+            <p className='reason-title'>{WHY_FRACTIONAL.title3}</p>
+            <p className='reason-description'>{WHY_FRACTIONAL.description3}</p>
           </div>
         </div>
       </div>

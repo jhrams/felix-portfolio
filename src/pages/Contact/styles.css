@@ -29,6 +29,22 @@
   /* 150% */
 }
 
+.calendly-inline-widget {
+  height: 670px !important;
+}
+
+@media (max-width: 999px) {
+  .calendly-inline-widget {
+    height: 970px !important;
+  }
+}
+
+@media (max-width: 649px) {
+  .calendly-inline-widget {
+    height: 912px !important;
+  }
+}
+
 @media (max-width: 480px) {
   .contact-title-container {
     display: flex;

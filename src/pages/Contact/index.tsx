@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         <h1 className='contact-title'>{GET_IN_TOUCH}</h1>
         <p className='contact-description'>{renderText(CONTACT_DESCRIPTION)}</p>
       </div>
-      <InlineWidget url="https://calendly.com/felix-lau" />
+      <InlineWidget url="https://calendly.com/felix-lau/30min" />
     </div>
   );
 }

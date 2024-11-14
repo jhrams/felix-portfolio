@@ -54,6 +54,10 @@
   /* 150% */
 }
 
+.step-description>a {
+  color: #FFDC41;
+}
+
 @media (min-width: 1024px) and (max-width: 1439px) {
   .get-started-container {
     padding: 48px 40px;

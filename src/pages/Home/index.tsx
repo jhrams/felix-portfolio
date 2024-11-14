@@ -4,13 +4,12 @@ import {
   TESTIMONIALS,
   HOME_TITLE,
   HOME_DESCRIPTION,
-  LETS_WORK_TOGETHER,
   FAQ,
-  FRACTIONAL
 } from '../../copies';
 
 import AboutFractional from './AboutFractional';
 import GetStarted from './GetStarted';
+import WhyFractional from './WhyFractional';
 
 import './styles.css'
 
@@ -21,6 +20,7 @@ const Home: React.FC = () => {
     <div style={{ marginTop: `${navbarHeight}px` }}>
       <AboutFractional />
       <GetStarted />
+      <WhyFractional />
     </div>
   );
 }

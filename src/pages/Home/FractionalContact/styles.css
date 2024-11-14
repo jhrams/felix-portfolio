@@ -14,7 +14,6 @@
   font-style: normal;
   font-weight: 300;
   line-height: 47px;
-  /* 120.513% */
   letter-spacing: -0.2px;
   text-align: center;
   margin-bottom: 48px;
@@ -31,7 +30,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 14px;
   color: white;
   text-decoration: none;
 }
@@ -47,14 +46,8 @@
   }
 }
 
-@media (min-width: 681px) and (max-width: 1023px) {
-  .fractional-contact {
-    padding: 64px 136px;
-    margin: 0;
-  }
-
+@media (max-width: 1023px) {
   .fractional-contact h2 {
-    margin-bottom: 32px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -63,7 +56,18 @@
   .fractional-contact a {
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 11px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1023px) {
+  .fractional-contact {
+    padding: 64px 136px;
+    margin: 0;
+  }
+
+  .fractional-contact h2 {
+    margin-bottom: 32px;
   }
 }
 
@@ -75,15 +79,6 @@
 
   .fractional-contact h2 {
     margin-bottom: 32px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-
-  .fractional-contact a {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
   }
 }
 
@@ -95,14 +90,5 @@
 
   .fractional-contact h2 {
     margin-bottom: 48px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-
-  .fractional-contact a {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
   }
 }

@@ -175,8 +175,8 @@
   font-family: Literata;
   font-size: 20px;
   font-style: normal;
-  font-weight: 528;
-  line-height: 30px;
+  font-weight: 400;
+  line-height: 14px;
   color: white;
   text-decoration: none;
   position: relative;
@@ -232,10 +232,14 @@
   .single-project-description-3,
   .trial-title,
   .trial-description-1,
-  .trial-description-2,
-  .structure-button {
+  .trial-description-2 {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .structure-button {
+    font-size: 16px;
+    line-height: 11px;
   }
 
   .retainer-box,

@@ -72,6 +72,7 @@ const WHY_FRACTIONAL = {
 }
 
 const VIEW_RECENT_WORK: string = 'View recent work';
+const RECENT_WORK_URL = "https://www.figma.com/proto/m892XlZtYvrOK7UdY2Apap/2024-Recent-Work---Felix-Lau?node-id=1-9503&node-type=slide&viewport=-100%2C-16%2C0.48&t=6nYH02Nftb8aSGPV-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&hide-ui=1&fuid=749107291816531339"
 
 const TESTIMONIALS = [
   {
@@ -83,7 +84,8 @@ const TESTIMONIALS = [
     companyTitle: 'Candor, Founder',
     sector: 'HR Tech: Recruiting',
     authorProfile: '/assets/candor2.png',
-    color: '#2F657A'
+    backgroundColor: '#2F657A',
+    fontColor: '#FFFFFF'
   },
   {
     companyIcon: '/assets/nirvana1.svg',
@@ -94,7 +96,8 @@ const TESTIMONIALS = [
     companyTitle: 'Nirvana, Co-Founder, CPO & President ',
     sector: 'Medtech: Health Insurance',
     authorProfile: '/assets/nirvana3.png',
-    color: '#2C1F45'
+    backgroundColor: '#2C1F45',
+    fontColor: '#FFFFFF'
   },
   {
     companyIcon: '/assets/castmagic1.svg',
@@ -105,7 +108,8 @@ const TESTIMONIALS = [
     companyTitle: 'Co-Founder',
     sector: 'Podcast/Audio: AI Tools',
     authorProfile: '/assets/castmagic2.png',
-    color: '#0D0B08'
+    backgroundColor: '#0D0B08',
+    fontColor: '#FFFFFF'
   },
   {
     companyIcon: '/assets/mammoth1.svg',
@@ -116,7 +120,8 @@ const TESTIMONIALS = [
     companyTitle: 'Mammoth, Founder & CEO',
     sector: 'B2B: CPG',
     authorProfile: '/assets/mammoth2.png',
-    color: '#4A41FD'
+    backgroundColor: '#4A41FD',
+    fontColor: '#FFFFFF'
   },
   {
     companyIcon: '/assets/sindi1.svg',
@@ -127,7 +132,8 @@ const TESTIMONIALS = [
     companyTitle: 'Sindi, Co-founder & CEO ',
     sector: 'Medtech: Dental SaaS',
     authorProfile: '/assets/sindi2.png',
-    color: '#EF616E'
+    backgroundColor: '#EF616E',
+    fontColor: '#FFFFFF'
   },
   {
     companyIcon: '/assets/atlas1.svg',
@@ -138,7 +144,8 @@ const TESTIMONIALS = [
     companyTitle: 'Atlas, Co-Founder & CTO',
     sector: 'Fintech: Credit Card',
     authorProfile: '/assets/atlas3.png',
-    color: '#0B0B5B'
+    backgroundColor: '#0B0B5B',
+    fontColor: '#FFFFFF'
   },
   {
     companyIcon: '/assets/wefunder1.svg',
@@ -149,7 +156,8 @@ const TESTIMONIALS = [
     companyTitle: 'Wefunder, Product Lead',
     sector: 'Fintech: Fundraising',
     authorProfile: '/assets/wefunder2.png',
-    color: '#0A76D1;'
+    backgroundColor: '#0A76D1',
+    fontColor: '#FFFFFF'
   },
   {
     companyIcon: '/assets/vibrant1.svg',
@@ -160,10 +168,11 @@ const TESTIMONIALS = [
     companyTitle: 'Vibrant, Co-Founder & CEO',
     sector: 'Medtech: AI-augmented EHR',
     authorProfile: '/assets/vibrant2.png',
-    color: '#646054'
+    backgroundColor: '#646054',
+    fontColor: '#FFFFFF'
   },
   {
-    companyIcon: '/asseets/forward1.png',
+    companyIcon: '/assets/forward1.png',
     companyNameIcon: '',
     testimonial1: 'Felix pulled together in record speeds the v1 vision of Forward from a handful of documents – some wireframes, some Google Docs, and a sprinkling of meetings. ',
     testimonial2: 'It’s been amazing to get the user feedback with glowing reviews about how easy the platform is to use, and what a delight it is to job match on Forward – Felix had a direct hand in this!',
@@ -171,7 +180,8 @@ const TESTIMONIALS = [
     companyTitle: 'Forward, Co-Founder',
     sector: 'HR Tech: Job Matching',
     authorProfile: '/asseets/forward2.png',
-    color: '#FFF'
+    backgroundColor: '#FFFFFF',
+    fontColor: '##241D16'
   },
 ]
 
@@ -233,5 +243,6 @@ export {
   LETS_WORK_TOGETHER,
   FAQ_TITLE,
   FAQS,
-  FRACTIONAL
+  FRACTIONAL,
+  RECENT_WORK_URL
 };

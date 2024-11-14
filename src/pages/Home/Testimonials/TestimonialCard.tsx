@@ -9,6 +9,7 @@ interface TestimonialCardProps {
   authorProfile: string;
   backgroundColor: string;
   fontColor: string;
+  hasDetails: boolean;
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
@@ -22,19 +23,23 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   authorProfile,
   backgroundColor,
   fontColor,
+  hasDetails,
 }) => (
   <div className="testimonial-card" style={{ backgroundColor, color: fontColor }}>
-    <img src={companyIcon} alt="Company Icon" className="company-icon" />
-    <img src={companyNameIcon} alt="Company Name Icon" className="company-name-icon" />
+    {companyIcon && <img src={companyIcon} alt="Company Icon" className="company-icon" />}
+    {companyNameIcon && <img src={companyNameIcon} alt="Company Name Icon" className="company-name-icon" />}
+    <p className="sector">{sector}</p>
     <p className="testimonial">{testimonial1}</p>
-    <p className="testimonial">{testimonial2}</p>
-    <div className="author-info">
-      <img src={authorProfile} alt={author} className="author-profile" />
-      <div>
-        <p className="author">{author}</p>
-        <p className="company-title">{companyTitle}</p>
-        <p className="sector">{sector}</p>
+    <p className="sub-testimonial">{testimonial2}</p>
+    <div className="author-arrow-container">
+      <div className="author-info">
+        <img src={authorProfile} alt={author} className="author-profile" />
+        <div className="author-text">
+          <p className="author">{author}</p>
+          <p className="company-title">{companyTitle}</p>
+        </div>
       </div>
+      {hasDetails && <img src="/src/assets/arrow.svg" alt="arrow" className="arrow" />}
     </div>
   </div>
 );

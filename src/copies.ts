@@ -85,7 +85,8 @@ const TESTIMONIALS = [
     sector: 'HR Tech: Recruiting',
     authorProfile: '/src/assets/candor3.png',
     backgroundColor: '#2F657A',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: true
   },
   {
     companyIcon: '/src/assets/nirvana1.svg',
@@ -97,7 +98,8 @@ const TESTIMONIALS = [
     sector: 'Medtech: Health Insurance',
     authorProfile: '/src/assets/nirvana3.png',
     backgroundColor: '#2C1F45',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: false
   },
   {
     companyIcon: '/src/assets/castmagic1.svg',
@@ -109,7 +111,8 @@ const TESTIMONIALS = [
     sector: 'Podcast/Audio: AI Tools',
     authorProfile: '/src/assets/castmagic2.png',
     backgroundColor: '#0D0B08',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: false
   },
   {
     companyIcon: '/src/assets/mammoth1.svg',
@@ -121,7 +124,8 @@ const TESTIMONIALS = [
     sector: 'B2B: CPG',
     authorProfile: '/src/assets/mammoth2.png',
     backgroundColor: '#4A41FD',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: false
   },
   {
     companyIcon: '/src/assets/sindi1.svg',
@@ -133,7 +137,8 @@ const TESTIMONIALS = [
     sector: 'Medtech: Dental SaaS',
     authorProfile: '/src/assets/sindi2.png',
     backgroundColor: '#EF616E',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: false
   },
   {
     companyIcon: '/src/assets/atlas1.svg',
@@ -145,7 +150,8 @@ const TESTIMONIALS = [
     sector: 'Fintech: Credit Card',
     authorProfile: '/src/assets/atlas3.png',
     backgroundColor: '#0B0B5B',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: false
   },
   {
     companyIcon: '/src/assets/wefunder1.png',
@@ -157,7 +163,8 @@ const TESTIMONIALS = [
     sector: 'Fintech: Fundraising',
     authorProfile: '/src/assets/wefunder2.png',
     backgroundColor: '#0A76D1',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: false
   },
   {
     companyIcon: '/src/assets/vibrant1.svg',
@@ -169,7 +176,8 @@ const TESTIMONIALS = [
     sector: 'Medtech: AI-augmented EHR',
     authorProfile: '/src/assets/vibrant2.png',
     backgroundColor: '#646054',
-    fontColor: '#FFFFFF'
+    fontColor: '#FFFFFF',
+    hasDetails: false
   },
   {
     companyIcon: '/src/assets/forward1.png',
@@ -181,7 +189,8 @@ const TESTIMONIALS = [
     sector: 'HR Tech: Job Matching',
     authorProfile: '/src/assets/forward2.png',
     backgroundColor: '#FFFFFF',
-    fontColor: '##241D16'
+    fontColor: '##241D16',
+    hasDetails: false
   },
 ]
 

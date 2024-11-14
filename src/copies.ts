@@ -185,7 +185,7 @@ const GET_STARTED = {
   description3: "We'll align on project deliverables and I'll start designing.",
 }
 
-const FAQ = [
+const FAQS = [
   {
     question: "What are the ways we can work together?",
     answer: "It depends on what your business needs. I can meet you where you are – from a small <strong>trial exercise</strong>; to a well-defined <strong>design project</strong>; all the way to a <strong>full-service retainer</strong>. When we get on our initial call, I make sure you’re not under- or overcommitting to anything that doesn’t fit the needs of your business. See the <span>Structure</span> page for more information."
@@ -229,6 +229,6 @@ export {
   HOME_TITLE,
   HOME_DESCRIPTION,
   LETS_WORK_TOGETHER,
-  FAQ,
+  FAQS,
   FRACTIONAL
 };

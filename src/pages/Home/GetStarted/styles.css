@@ -1,0 +1,125 @@
+.get-started-container {
+  background: lightgray linear-gradient(155deg, #241D16 67%, rgba(36, 29, 22, 0.00) 175.32%) 50% / cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 80px;
+}
+
+.get-started-title {
+  margin-bottom: 48px;
+  font-family: Literata;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 47px;
+  /* 120.513% */
+  letter-spacing: -0.2px;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.steps-container>*:not(:last-child) {
+  margin-right: 48px;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.step-title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: Literata;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px
+}
+
+.step-description {
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .get-started-container {
+    padding: 48px 40px;
+  }
+
+  .get-started-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1023px) {
+  .get-started-container {
+    padding: 40px 24px;
+  }
+
+  .get-started-title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .step-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .step-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-started-container {
+    padding: 32px 16px;
+  }
+
+  .get-started-title {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps-container>*:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .step-container {
+    align-items: center;
+  }
+
+  .step-title {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .step-description {
+    font-size: 13px;
+    text-align: center;
+  }
+}

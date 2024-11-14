@@ -1,0 +1,21 @@
+.faq-item {
+  border-top: 2px solid #241D16;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 10px;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  padding: 10px;
+}

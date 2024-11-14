@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { renderText } from '../../../utils/text';
 
 import "./styles.css";
 
@@ -23,7 +23,9 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
           {isOpen ? <i className="fas fa-minus"></i> : <i className="fas fa-plus"></i>}
         </span>
       </h3>
-      {isOpen && <p className="faq-answer">{answer}</p>}
+      <div className={`faq-answer ${isOpen ? 'open' : ''}`}>
+        {renderText(answer)}
+      </div>
     </div>
   );
 };

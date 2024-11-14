@@ -1,4 +1,4 @@
-.why-fractional {
+.fractional-contact {
   background: lightgray linear-gradient(155deg, #241D16 67%, rgba(36, 29, 22, 0.00) 175.32%) 50% / cover no-repeat;
   color: white;
   padding: 80px;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.why-fractional h2 {
+.fractional-contact h2 {
   font-family: Literata;
   font-size: 39px;
   font-style: normal;
@@ -20,11 +20,11 @@
   margin-bottom: 48px;
 }
 
-.why-fractional h2 span {
+.fractional-contact h2 span {
   color: #FFDC41;
 }
 
-.why-fractional a {
+.fractional-contact a {
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 16px 24px;
   font-family: Literata;
@@ -37,30 +37,30 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .why-fractional {
+  .fractional-contact {
     padding: 64px 40px;
     margin: 40px 120px;
   }
 
-  .why-fractional h2 {
+  .fractional-contact h2 {
     margin-bottom: 32px;
   }
 }
 
 @media (min-width: 681px) and (max-width: 1023px) {
-  .why-fractional {
+  .fractional-contact {
     padding: 64px 136px;
     margin: 0;
   }
 
-  .why-fractional h2 {
+  .fractional-contact h2 {
     margin-bottom: 32px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
   }
 
-  .why-fractional a {
+  .fractional-contact a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -68,19 +68,19 @@
 }
 
 @media (min-width: 481px) and (max-width: 680px) {
-  .why-fractional {
+  .fractional-contact {
     padding: 40px 64px;
     margin: 0;
   }
 
-  .why-fractional h2 {
+  .fractional-contact h2 {
     margin-bottom: 32px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
   }
 
-  .why-fractional a {
+  .fractional-contact a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -88,19 +88,19 @@
 }
 
 @media (max-width: 480px) {
-  .why-fractional {
+  .fractional-contact {
     padding: 80px 16px;
     margin: 0;
   }
 
-  .why-fractional h2 {
+  .fractional-contact h2 {
     margin-bottom: 48px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
   }
 
-  .why-fractional a {
+  .fractional-contact a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;

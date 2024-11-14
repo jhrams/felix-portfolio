@@ -9,7 +9,7 @@ import {
 
 import AboutFractional from './AboutFractional';
 import GetStarted from './GetStarted';
-import WhyFractional from './WhyFractional';
+import FractionalContact from './FractionalContact';
 
 import './styles.css'
 
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
     <div style={{ marginTop: `${navbarHeight}px` }}>
       <AboutFractional />
       <GetStarted />
-      <WhyFractional />
+      <FractionalContact />
     </div>
   );
 }

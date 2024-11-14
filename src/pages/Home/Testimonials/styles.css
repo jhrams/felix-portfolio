@@ -57,6 +57,10 @@
   background: rgba(0, 0, 0, 0.25);
 }
 
+.company-icon {
+  margin-right: 2px;
+}
+
 .author-arrow-container {
   display: flex;
   justify-content: space-between;

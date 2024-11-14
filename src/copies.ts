@@ -178,7 +178,7 @@ const TESTIMONIALS = [
 const GET_STARTED = {
   title: 'How we can get started',
   title1: 'Book a call',
-  description1: '<span>Spend 30 minutes</span> discussing your businesses needs and getting to know each other.',
+  description1: '<a href="/contact">Spend 30 minutes</a> discussing your businesses needs and getting to know each other.',
   title2: 'Onboard',
   description2: "I'll get up to speed on your business in less than a week.",
   title3: "Design for your product",

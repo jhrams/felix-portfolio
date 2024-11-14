@@ -12,7 +12,6 @@
   font-style: normal;
   font-weight: 300;
   line-height: 69px;
-  /* 113.115% */
   letter-spacing: -0.7px;
   margin-top: 0px;
 }
@@ -26,11 +25,26 @@
   font-size: 20px;
   font-style: normal;
   line-height: 30px;
-  /* 150% */
+  text-align: center;
 }
 
 .calendly-inline-widget {
   height: 670px !important;
+}
+
+@media (min-width: 481px) and (max-width: 1439px) {
+  .contact-title {
+    font-size: 39px;
+    line-height: 47px;
+    letter-spacing: -0.2px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1023px) {
+  .contact-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -40,8 +54,19 @@
 }
 
 @media (max-width: 649px) {
+  .contact-title-container {
+    padding-bottom: 40px;
+  }
+
   .calendly-inline-widget {
     height: 912px !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .contact-description {
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
@@ -58,11 +83,8 @@
   }
 
   .contact-title {
-    font-family: Literata;
     font-size: 20px;
-    font-style: normal;
-    line-height: 30px;
-    /* 150% */
+    line-height: 14px;
   }
 
   .contact-description {
@@ -70,14 +92,7 @@
     font-size: 13px;
     font-style: normal;
     line-height: 19px;
+    text-align: start;
   }
 }
 
-@media (max-width: 649px) {
-  .contact-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 16px;
-  }
-}

@@ -12,8 +12,8 @@ const {
   description3
 } = WHY_FRACTIONAL;
 
-const AboutFractional = () => {
-  return (<div className='about-container'>
+const AboutFractional = () => (
+  <div className='about-container'>
     <p className='about-title'>{renderText(title)}</p>
     <div className='reasons-container'>
       <div className='reason-container'>
@@ -29,7 +29,8 @@ const AboutFractional = () => {
         <p className='reason-description'>{description3}</p>
       </div>
     </div>
-  </div>)
-}
+  </div>
+)
+
 
 export default AboutFractional;

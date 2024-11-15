@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { renderText } from '../../../utils/text';
+import { renderText } from '../../../utils';
 
 import "./styles.css";
 

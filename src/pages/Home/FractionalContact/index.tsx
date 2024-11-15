@@ -2,7 +2,7 @@ import {
   FRACTIONAL,
   LETS_WORK_TOGETHER
 } from "../../../copies"
-import { renderText } from '../../../utils/text';
+import { renderText } from '../../../utils';
 
 import "./styles.css"
 

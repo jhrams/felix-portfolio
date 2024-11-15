@@ -1,4 +1,6 @@
 import TestimonialCard from './TestimonialCard';
+import useWindowWidth from '../../../hooks/useWindowWidth';
+import { splitArrayIntoGroups } from '../../../utils';
 
 import {
   VIEW_RECENT_WORK,
@@ -8,19 +10,60 @@ import {
 
 import './styles.css'
 
-const Testimonials: React.FC = () => (
-  <div className="testimonials">
-    <div className="recent-work">
-      <i className="fas fa-tv" />
-      <a href={RECENT_WORK_URL}>{VIEW_RECENT_WORK}</a>
-    </div>
-    {TESTIMONIALS.map((testimonial, index) => (
-      <TestimonialCard
-        key={index}
-        {...testimonial}
-      />
-    ))}
+const testimonials = TESTIMONIALS.map((testimonial, index) => (
+  <TestimonialCard
+    key={index}
+    {...testimonial}
+  />
+))
+
+const recentWork = (
+  <div className="recent-work">
+    <i className="fas fa-tv" />
+    <a href={RECENT_WORK_URL}>{VIEW_RECENT_WORK}</a>
   </div>
-);
+)
+
+const Testimonials: React.FC = () => {
+  const windowWidth = useWindowWidth();
+  const isMobile = windowWidth < 681;
+  const isTablet = windowWidth > 680 && windowWidth < 1024;
+  const isDesktop = windowWidth > 1023;
+
+  if (isDesktop) {
+    const groups = splitArrayIntoGroups([recentWork, ...testimonials], 3);
+    return (
+      <div className="testimonials">
+        {groups.map((group, index) => (
+          <div key={index} className="group">
+            {group}
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  if (isTablet) {
+    const groups = splitArrayIntoGroups([recentWork, ...testimonials], 2);
+    return (
+      <div className="testimonials">
+        {groups.map((group, index) => (
+          <div key={index} className="group">
+            {group}
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  if (isMobile) {
+    return (
+      <div className="testimonials">
+        {recentWork}
+        {testimonials}
+      </div>
+    )
+  };
+}
 
 export default Testimonials;

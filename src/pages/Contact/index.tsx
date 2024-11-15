@@ -1,7 +1,7 @@
 import { InlineWidget } from "react-calendly";
 import { useNavbarHeight } from '../../context/NavbarHeightContext';
 import { GET_IN_TOUCH, CONTACT_DESCRIPTION } from '../../copies'
-import { renderText } from '../../utils/text';
+import { renderText } from '../../utils';
 import './styles.css'
 
 const Contact: React.FC = () => {

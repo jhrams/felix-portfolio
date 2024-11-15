@@ -1,5 +1,5 @@
 import { GET_STARTED } from '../../../copies';
-import { renderText } from '../../../utils/text';
+import { renderText } from '../../../utils';
 import "./styles.css"
 
 const {

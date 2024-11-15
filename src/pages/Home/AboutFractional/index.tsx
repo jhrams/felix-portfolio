@@ -1,5 +1,5 @@
 import { WHY_FRACTIONAL } from '../../../copies';
-import { renderText } from '../../../utils/text';
+import { renderText } from '../../../utils';
 import "./styles.css"
 
 const {

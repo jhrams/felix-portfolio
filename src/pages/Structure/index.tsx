@@ -6,7 +6,7 @@ import {
   TRIAL_MODEL,
   GET_IN_TOUCH
 } from '../../copies'
-import { renderText } from '../../utils/text'
+import { renderText } from '../../utils'
 
 import './styles.css'
 

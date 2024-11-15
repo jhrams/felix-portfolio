@@ -24,3 +24,17 @@ export const renderText = (text: string): (string | JSX.Element)[] => {
     return part;
   });
 };
+
+export const splitArrayIntoGroups = (array: any[], numGroups: number): any[][] => {
+  if (numGroups < 1) return [];
+
+  const groups: any[][] = Array.from({ length: numGroups }, () => []);
+  let groupIndex = 0;
+
+  array.forEach((item) => {
+    groups[groupIndex].push(item);
+    groupIndex = (groupIndex + 1) % numGroups;
+  });
+
+  return groups;
+};

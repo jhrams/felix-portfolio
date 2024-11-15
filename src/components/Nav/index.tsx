@@ -17,7 +17,7 @@ const Nav: React.FC<NavProps> = ({ mobileTitle, title }) => {
 
   return (
     <nav ref={navbarRef}>
-      <p>{isXlarge ? title : <strong>{mobileTitle}</strong>}</p >
+      <a href="/">{isXlarge ? title : <strong>{mobileTitle}</strong>}</a >
       <PageLinks />
     </nav>
   );

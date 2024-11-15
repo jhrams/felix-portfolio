@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
       {isMobile ? (
         <>
           <div className="row">
-            <p className="footer-title">{title}</p>
+            <a href="/" className="footer-title">{title}</a>
             <div className="links-container">
               <PageLinks />
             </div>
@@ -30,7 +30,7 @@ const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
         </>
       ) : (
         <>
-          <p className="footer-title">{title}</p>
+          <a href="/" className="footer-title">{title}</a>
           <div className="links-container">
             <PageLinks />
           </div>

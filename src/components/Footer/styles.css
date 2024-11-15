@@ -12,6 +12,8 @@ footer {
 
 .footer-title {
   flex: 1;
+  text-decoration: none;
+  color: #181D20;
 }
 
 .container {

@@ -8,6 +8,8 @@ footer {
   font-size: 13px;
   font-family: 'Satoshi', sans-serif;
   line-height: 19px;
+  z-index: 500;
+  position: absolute;
 }
 
 .footer-title {

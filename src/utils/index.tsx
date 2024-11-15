@@ -29,12 +29,11 @@ export const splitArrayIntoGroups = (array: any[], numGroups: number): any[][] =
   if (numGroups < 1) return [];
 
   const groups: any[][] = Array.from({ length: numGroups }, () => []);
-  let groupIndex = 0;
+  const itemsPerGroup = Math.ceil(array.length / numGroups);
 
-  array.forEach((item) => {
-    groups[groupIndex].push(item);
-    groupIndex = (groupIndex + 1) % numGroups;
-  });
+  for (let i = 0; i < numGroups; i++) {
+    groups[i] = array.slice(i * itemsPerGroup, (i + 1) * itemsPerGroup);
+  }
 
   return groups;
 };

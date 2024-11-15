@@ -29,7 +29,7 @@
 .faq-icon {
   justify-content: center;
   height: 24px;
-  width: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
 }
@@ -76,6 +76,11 @@
   .faq-title {
     margin-bottom: 16px;
   }
+
+  .faq-question {
+    font-size: 16px;
+    line-height: 11px;
+  }
 }
 
 @media (min-width: 681px) and (max-width: 1023px) {
@@ -86,11 +91,6 @@
 
   .faq-title {
     font-size: 20px;
-  }
-
-  .faq-question {
-    font-size: 16px;
-    margin-bottom: 8px;
   }
 }
 
@@ -105,7 +105,7 @@
   }
 
   .faq-question {
-    font-size: 16px;
-    margin-bottom: 8px;
+    line-height: 24px;
+    gap: 16px;
   }
 }

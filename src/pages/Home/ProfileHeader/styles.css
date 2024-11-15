@@ -1,0 +1,96 @@
+.profile-header {
+  display: flex;
+  padding: 120px 0;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.profile-header h1 {
+  font-family: Literata;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 47px;
+  /* 120.513% */
+  letter-spacing: -0.2px;
+  margin-bottom: 24px;
+  width: 50%;
+  text-align: center;
+}
+
+.profile-header p {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-header a {
+  padding: 16px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #241D16;
+  font-family: Literata;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+
+.line {
+  position: absolute;
+  top: 155px;
+  left: 0;
+}
+
+.profile {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+.profile-dots {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  z-index: -1
+}
+
+@media (max-width: 1023px) {
+  .profile {
+    position: unset;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1023px) {
+  .profile-header {
+    padding: 40px 16px;
+  }
+
+  .profile-header h1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 681px) {
+  .profile-header {
+    padding: 80px 40px;
+  }
+
+  .profile-header h1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 481px) {
+  .profile-header {
+    padding: 40px 16px;
+  }
+
+  .profile-header h1 {
+    width: 100%;
+  }
+}

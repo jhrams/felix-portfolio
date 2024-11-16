@@ -1,5 +1,3 @@
-import { BASE_URL } from "./constants";
-
 interface RetainerModel {
   title: string;
   description1: string;

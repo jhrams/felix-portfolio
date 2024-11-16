@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   const { navbarHeight } = useNavbarHeight();
 
   return (
-    <div style={{ marginTop: `${navbarHeight}px` }}>
+    <div className="home-page" style={{ marginTop: `${navbarHeight}px` }}>
       <ProfileHeader />
       <AboutFractional />
       <Testimonials />

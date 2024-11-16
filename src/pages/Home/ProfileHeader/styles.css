@@ -1,6 +1,6 @@
 .profile-header {
   display: flex;
-  padding: 120px 0;
+  padding: 160px 0;
   flex-direction: column;
   position: relative;
   align-items: center;
@@ -70,6 +70,10 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .profile-header {
+    padding-top: 120px;
+  }
+
   .profile-header p {
     font-size: 16px;
     line-height: 24px;

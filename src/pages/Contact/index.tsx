@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   const { navbarHeight } = useNavbarHeight();
 
   return (
-    <div style={{ marginTop: `${navbarHeight}px` }}>
+    <div className="contact-page" style={{ marginTop: `${navbarHeight}px` }}>
       <div className='contact-title-container'>
         <h1 className='contact-title'>{GET_IN_TOUCH}</h1>
         <p className='contact-description'>{renderText(CONTACT_DESCRIPTION)}</p>

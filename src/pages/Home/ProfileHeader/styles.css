@@ -43,21 +43,21 @@
 
 .line {
   position: absolute;
-  top: 155px;
+  top: 78px;
   left: 0;
 }
 
 .profile {
   position: absolute;
   right: 0;
-  top: 60px;
+  top: 123px;
 }
 
 .profile-dots {
   position: absolute;
   left: 0;
   top: 400px;
-  z-index: -1
+  z-index: -1'
 }
 
 @media (max-width: 1439px) {
@@ -72,6 +72,16 @@
   .profile-header p {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .profile {
+    top: 40px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1439px) {
+  .line {
+    top: 120px;
   }
 }
 

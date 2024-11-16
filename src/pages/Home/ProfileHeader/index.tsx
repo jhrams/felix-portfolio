@@ -15,7 +15,8 @@ const ProfileHeader: React.FC = () => (
       <p>{HOME_DESCRIPTION}</p>
       <a href={`${BASE_URL}/#/contact`} className="contact-button">{LETS_WORK_TOGETHER}</a>
       <img src="line.svg" alt="Line" className="line" />
-      <img src="profile-header-dots.png" alt="Profile-dots" className="profile-dots" />
+      <img src="profile-header-xl-dots.png" alt="Profile-xl-dots" className="profile-header-xl-dots" />
+      <img src="profile-header-l-dots.png" alt="Profile-l-dots" className="profile-header-l-dots" />
     </div>
   </>
 );

@@ -1,6 +1,7 @@
 import PageLinks from "../PageLinks";
 import useWindowWidth from '../../hooks/useWindowWidth';
 import { useNavbarHeight } from '../../context/NavbarHeightContext';
+import { BASE_URL } from "../../constants";
 
 import "./styles.css"
 
@@ -17,7 +18,7 @@ const Nav: React.FC<NavProps> = ({ mobileTitle, title }) => {
 
   return (
     <nav ref={navbarRef}>
-      <a href="/">{isXlarge ? title : <strong>{mobileTitle}</strong>}</a >
+      <a href={`${BASE_URL}/`}>{isXlarge ? title : <strong>{mobileTitle}</strong>}</a >
       <PageLinks />
     </nav>
   );

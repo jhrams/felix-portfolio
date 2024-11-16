@@ -2,6 +2,8 @@ import { InlineWidget } from "react-calendly";
 import { useNavbarHeight } from '../../context/NavbarHeightContext';
 import { GET_IN_TOUCH, CONTACT_DESCRIPTION } from '../../copies'
 import { renderText } from '../../utils';
+import { ASSETS_BASE } from "../../constants";
+
 import './styles.css'
 
 const Contact: React.FC = () => {
@@ -14,8 +16,8 @@ const Contact: React.FC = () => {
         <p className='contact-description'>{renderText(CONTACT_DESCRIPTION)}</p>
       </div>
       <InlineWidget url="https://calendly.com/felix-lau/30min" />
-      <img src="/src/assets/contact-dots.png" alt="contact-dots" className="contact-dots" />
-      <img src="/src/assets/contact-line.png" alt="contact-line" className="contact-line" />
+      <img src={`${ASSETS_BASE}/contact-dots.png`} alt="contact-dots" className="contact-dots" />
+      <img src={`${ASSETS_BASE}/contact-line.png`} alt="contact-line" className="contact-line" />
     </div>
   );
 }

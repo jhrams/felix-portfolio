@@ -1,5 +1,6 @@
 import PageLinks from "../PageLinks";
 import useWindowWidth from '../../hooks/useWindowWidth';
+import { BASE_URL } from "../../constants";
 
 import "./styles.css"
 
@@ -18,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
       {isMobile ? (
         <>
           <div className="row">
-            <a href="/" className="footer-title">{title}</a>
+            <a href={`${BASE_URL}/`} className="footer-title">{title}</a>
             <div className="links-container">
               <PageLinks />
             </div>
@@ -30,7 +31,7 @@ const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
         </>
       ) : (
         <>
-          <a href="/" className="footer-title">{title}</a>
+          <a href={`${BASE_URL}/`} className="footer-title">{title}</a>
           <div className="links-container">
             <PageLinks />
           </div>

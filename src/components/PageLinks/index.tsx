@@ -1,4 +1,6 @@
 import { useLocation } from 'react-router-dom';
+import { BASE_URL } from '../../constants';
+
 import "./styles.css"
 
 const PageLinks: React.FC = (): JSX.Element => {
@@ -7,9 +9,9 @@ const PageLinks: React.FC = (): JSX.Element => {
 
   return (
     <div>
-      <a href="/" className={`page-link${currentPath === '/' ? ' active' : ''}`}>Home</a>
-      <a href="/structure" className={`page-link${currentPath === '/structure' ? ' active' : ''}`}>Structure</a>
-      <a href="/contact" className={`page-link${currentPath === '/contact' ? ' active' : ''}`}>Contact</a>
+      <a href={`${BASE_URL}/`} className={`page-link${currentPath === '/' ? ' active' : ''}`}>Home</a>
+      <a href={`${BASE_URL}/structure`} className={`page-link${currentPath === '/structure' ? ' active' : ''}`}>Structure</a>
+      <a href={`${BASE_URL}/contact`} className={`page-link${currentPath === '/contact' ? ' active' : ''}`}>Contact</a>
     </div>
   );
 }

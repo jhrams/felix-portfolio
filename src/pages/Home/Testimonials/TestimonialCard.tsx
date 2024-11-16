@@ -1,3 +1,5 @@
+import { ASSETS_BASE } from "../../../constants";
+
 interface TestimonialCardProps {
   companyIcon: string;
   companyNameIcon: string;
@@ -39,7 +41,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           <p className="company-title">{companyTitle}</p>
         </div>
       </div>
-      {hasDetails && <img src="/src/assets/arrow.svg" alt="arrow" className="arrow" />}
+      {hasDetails && <img src={`${ASSETS_BASE}/arrow.svg`} alt="arrow" className="arrow" />}
     </div>
   </div>
 );

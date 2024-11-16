@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Structure from './pages/Structure'
 import Contact from './pages/Contact'
 import { NAV_TITLE, FOOTER_TITLE, COPYRIGHT, EMAIL, NAV_MOBILE_TITLE } from './copies'
+import { BASE_URL } from './constants';
 
 function App() {
   return (
@@ -14,9 +15,9 @@ function App() {
       <Router>
         <Nav mobileTitle={NAV_MOBILE_TITLE} title={NAV_TITLE} />
         <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/structure" Component={Structure} />
-          <Route path="/contact" Component={Contact} />
+          <Route path={`${BASE_URL}/`} Component={Home} />
+          <Route path={`${BASE_URL}/structure`} Component={Structure} />
+          <Route path={`${BASE_URL}/contact`} Component={Contact} />
         </Routes>
         <Footer title={FOOTER_TITLE} copyright={COPYRIGHT} email={EMAIL} />
       </Router>

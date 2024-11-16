@@ -94,3 +94,15 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1023) {
+  .profile-dots {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .line {
+    display: none;
+  }
+}

@@ -6,6 +6,7 @@ import {
   TRIAL_MODEL,
   GET_IN_TOUCH
 } from '../../copies'
+import { ASSETS_BASE, BASE_URL } from '../../constants';
 import { renderText } from '../../utils'
 
 import './styles.css'
@@ -54,11 +55,11 @@ const Structure: React.FC = () => {
           </div>
         </div>
         <div className='structure-button-container'>
-          <a className='structure-button' href='/contact'>{GET_IN_TOUCH}</a>
+          <a className='structure-button' href={`${BASE_URL}/contact`}>{GET_IN_TOUCH}</a>
         </div>
       </div>
-      <img src="/src/assets/structure-bottom-dots.png" alt="structure-bottom-dots" className='structure-bottom-dots' />
-      <img src="/src/assets/structure-top-dots.png" alt="structure-top-dots" className='structure-top-dots' />
+      <img src={`${ASSETS_BASE}/structure-bottom-dots.png`} alt="structure-bottom-dots" className='structure-bottom-dots' />
+      <img src={`${ASSETS_BASE}/structure-top-dots.png`} alt="structure-top-dots" className='structure-top-dots' />
     </div>
   )
 }

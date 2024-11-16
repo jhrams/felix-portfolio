@@ -1,3 +1,5 @@
+import { ASSETS_BASE, BASE_URL } from "./constants";
+
 interface RetainerModel {
   title: string;
   description1: string;
@@ -76,7 +78,7 @@ const RECENT_WORK_URL = "https://www.figma.com/proto/m892XlZtYvrOK7UdY2Apap/2024
 
 const TESTIMONIALS = [
   {
-    companyIcon: '/src/assets/candor1.svg',
+    companyIcon: `${ASSETS_BASE}/candor1.svg`,
     companyNameIcon: '/src/assets/candor2.svg',
     testimonial1: 'Felix joined Candor as our first hire. He has an exceptional level of intuition for what we should build and when, coupled with a very high bar for execution. Candor wouldn’t be where it is today without him.',
     testimonial2: '',
@@ -197,7 +199,7 @@ const TESTIMONIALS = [
 const GET_STARTED = {
   title: 'How we can get started',
   title1: 'Book a call',
-  description1: '<a href="/contact">Spend 30 minutes</a> discussing your businesses needs and getting to know each other.',
+  description1: `<a href=${BASE_URL}/contact >Spend 30 minutes</a> discussing your businesses needs and getting to know each other.`,
   title2: 'Onboard',
   description2: "I'll get up to speed on your business in less than a week.",
   title3: "Design for your product",

@@ -4,6 +4,19 @@
   align-items: center;
   padding: 40px 80px 0px;
   color: #241D16;
+  position: relative;
+}
+
+.contact-dots {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.contact-line {
+  position: absolute;
+  top: 400px;
+  z-index: -1;
 }
 
 .contact-title {
@@ -96,3 +109,14 @@
   }
 }
 
+@media (max-width: 1339px) {
+  .contact-dots {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contact-line {
+    display: none;
+  }
+}

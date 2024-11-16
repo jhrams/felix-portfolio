@@ -1,4 +1,4 @@
-import { ASSETS_BASE, BASE_URL } from "./constants";
+import { BASE_URL } from "./constants";
 
 interface RetainerModel {
   title: string;

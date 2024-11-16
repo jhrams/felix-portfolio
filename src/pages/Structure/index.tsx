@@ -6,7 +6,7 @@ import {
   TRIAL_MODEL,
   GET_IN_TOUCH
 } from '../../copies'
-import { ASSETS_BASE, BASE_URL } from '../../constants';
+import { BASE_URL } from '../../constants';
 import { renderText } from '../../utils'
 
 import './styles.css'

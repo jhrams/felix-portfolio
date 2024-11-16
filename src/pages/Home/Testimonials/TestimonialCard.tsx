@@ -1,5 +1,3 @@
-import { ASSETS_BASE } from "../../../constants";
-
 interface TestimonialCardProps {
   companyIcon: string;
   companyNameIcon: string;

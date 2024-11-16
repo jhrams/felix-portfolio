@@ -3,7 +3,7 @@ import {
   HOME_DESCRIPTION,
   LETS_WORK_TOGETHER,
 } from '../../../copies';
-import { ASSETS_BASE, BASE_URL } from '../../../constants';
+import { BASE_URL } from '../../../constants';
 
 import "./styles.css"
 

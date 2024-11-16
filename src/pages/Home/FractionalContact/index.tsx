@@ -3,7 +3,7 @@ import {
   LETS_WORK_TOGETHER
 } from "../../../copies"
 import { renderText } from '../../../utils';
-import { ASSETS_BASE, BASE_URL } from '../../../constants';
+import { BASE_URL } from '../../../constants';
 
 import "./styles.css"
 

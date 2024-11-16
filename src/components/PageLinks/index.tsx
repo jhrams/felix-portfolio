@@ -10,8 +10,8 @@ const PageLinks: React.FC = (): JSX.Element => {
   return (
     <div>
       <a href={`${BASE_URL}/`} className={`page-link${currentPath === '/' ? ' active' : ''}`}>Home</a>
-      <a href={`${BASE_URL}/structure`} className={`page-link${currentPath === '/structure' ? ' active' : ''}`}>Structure</a>
-      <a href={`${BASE_URL}/contact`} className={`page-link${currentPath === '/contact' ? ' active' : ''}`}>Contact</a>
+      <a href={`${BASE_URL}/#/structure`} className={`page-link${currentPath === '/structure' ? ' active' : ''}`}>Structure</a>
+      <a href={`${BASE_URL}/#/contact`} className={`page-link${currentPath === '/contact' ? ' active' : ''}`}>Contact</a>
     </div>
   );
 }

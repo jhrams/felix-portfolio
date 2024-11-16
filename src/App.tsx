@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { NavbarHeightProvider } from './context/NavbarHeightContext';
 import './App.css'
 import Nav from './components/Nav'
@@ -11,7 +11,7 @@ import { NAV_TITLE, FOOTER_TITLE, COPYRIGHT, EMAIL, NAV_MOBILE_TITLE } from './c
 function App() {
   return (
     <NavbarHeightProvider>
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router>
         <Nav mobileTitle={NAV_MOBILE_TITLE} title={NAV_TITLE} />
         <Routes>
           <Route path="/" Component={Home} />

@@ -199,7 +199,7 @@ const TESTIMONIALS = [
 const GET_STARTED = {
   title: 'How we can get started',
   title1: 'Book a call',
-  description1: `<a href=${BASE_URL}/contact >Spend 30 minutes</a> discussing your businesses needs and getting to know each other.`,
+  description1: '<a href="/#/contact" >Spend 30 minutes</a> discussing your businesses needs and getting to know each other.',
   title2: 'Onboard',
   description2: "I'll get up to speed on your business in less than a week.",
   title3: "Design for your product",
@@ -211,7 +211,7 @@ const FAQ_TITLE: string = 'FAQ';
 const FAQS = [
   {
     question: "What are the ways we can work together?",
-    answer: "It depends on what your business needs. I can meet you where you are – from a small <strong>trial exercise</strong>; to a well-defined <strong>design project</strong>; all the way to a <strong>full-service retainer</strong>. When we get on our initial call, I make sure you’re not under- or overcommitting to anything that doesn’t fit the needs of your business. See the <a href=\"/structure\">Structure</a> page for more information."
+    answer: "It depends on what your business needs. I can meet you where you are – from a small <strong>trial exercise</strong>; to a well-defined <strong>design project</strong>; all the way to a <strong>full-service retainer</strong>. When we get on our initial call, I make sure you’re not under- or overcommitting to anything that doesn’t fit the needs of your business. See the <a href=\"/#/structure\">Structure</a> page for more information."
   },
   {
     question: "When can we start?",

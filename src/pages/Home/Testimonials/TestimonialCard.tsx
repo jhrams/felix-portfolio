@@ -39,7 +39,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           <p className="company-title">{companyTitle}</p>
         </div>
       </div>
-      {hasDetails && <img src={`arrow.svg`} alt="arrow" className="arrow" />}
+      {hasDetails && <img src="arrow.svg" alt="arrow" className="arrow" />}
     </div>
   </div>
 );

@@ -36,6 +36,7 @@ const Testimonials: React.FC = () => {
     groups[0].unshift(recentWork);
     return (
       <div className="testimonials">
+        <img src="testimonials-circle.png" alt="testimonials-circle" className="testimonials-circle" />
         {groups.map((group, index) => (
           <div key={index} className="group">
             {group}

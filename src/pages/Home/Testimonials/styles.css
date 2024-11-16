@@ -1,6 +1,13 @@
 .testimonials {
   padding: 40px 80px;
   display: flex;
+  position: relative;
+}
+
+.testimonials-circle {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .testimonials>*:not(:last-child) {
@@ -111,7 +118,7 @@
   flex: 1;
 }
 
-.testimonials> .group:not(:last-child) {
+.testimonials>.group:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -147,7 +154,7 @@
     margin-bottom: 16px;
   }
 
-  .testimonials> .testimonial-card:not(:last-child) {
+  .testimonials>.testimonial-card:not(:last-child) {
     margin-right: 0;
   }
 

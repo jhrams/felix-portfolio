@@ -399,13 +399,13 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .structure-top-dots {
     display: none;
   }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 480px) {
   .structure-bottom-dots {
     display: none;
   }

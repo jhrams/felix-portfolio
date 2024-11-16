@@ -16,8 +16,8 @@ const Contact: React.FC = () => {
         <p className='contact-description'>{renderText(CONTACT_DESCRIPTION)}</p>
       </div>
       <InlineWidget url="https://calendly.com/felix-lau/30min" />
-      <img src={`${ASSETS_BASE}/contact-dots.png`} alt="contact-dots" className="contact-dots" />
-      <img src={`${ASSETS_BASE}/contact-line.png`} alt="contact-line" className="contact-line" />
+      <img src={`contact-dots.png`} alt="contact-dots" className="contact-dots" />
+      <img src={`contact-line.png`} alt="contact-line" className="contact-line" />
     </div>
   );
 }

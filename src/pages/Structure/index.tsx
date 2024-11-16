@@ -58,8 +58,8 @@ const Structure: React.FC = () => {
           <a className='structure-button' href={`${BASE_URL}/contact`}>{GET_IN_TOUCH}</a>
         </div>
       </div>
-      <img src={`${ASSETS_BASE}/structure-bottom-dots.png`} alt="structure-bottom-dots" className='structure-bottom-dots' />
-      <img src={`${ASSETS_BASE}/structure-top-dots.png`} alt="structure-top-dots" className='structure-top-dots' />
+      <img src={`structure-bottom-dots.png`} alt="structure-bottom-dots" className='structure-bottom-dots' />
+      <img src={`structure-top-dots.png`} alt="structure-top-dots" className='structure-top-dots' />
     </div>
   )
 }

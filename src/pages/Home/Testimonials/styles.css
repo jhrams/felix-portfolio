@@ -21,8 +21,17 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 528;
-  line-height: 30px;
+  line-height: 14px;
   color: #241D16;
+  text-decoration: none;
+}
+
+.recent-work .fas {
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-card {
@@ -102,12 +111,30 @@
   flex: 1;
 }
 
-.testimonials>*:not(:last-child) {
+.testimonials> .group:not(:last-child) {
   margin-right: 24px;
 }
 
 .group>*:not(:last-child) {
   margin-bottom: 24px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .testimonials {
+    padding: 24px 40px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1023px) {
+  .recent-work {
+    width: 50%;
+    margin: 24px auto;
+  }
+
+  .testimonials {
+    padding: 24px;
+    padding-top: 0px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -120,11 +147,16 @@
     margin-bottom: 16px;
   }
 
-  .testimonials>*:not(:last-child) {
+  .testimonials> .testimonial-card:not(:last-child) {
     margin-right: 0;
   }
 
   .group>*:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  .recent-work {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }

@@ -27,7 +27,8 @@ const recentWork = (
 const Testimonials: React.FC = () => {
   const windowWidth = useWindowWidth();
   const isMobile = windowWidth < 681;
-  const isTablet = windowWidth > 680 && windowWidth < 1440;
+  const isMediumTablet = windowWidth > 680 && windowWidth < 1024;
+  const isLargeTablet = windowWidth > 1023 && windowWidth < 1440;
   const isDesktop = windowWidth > 1439;
 
   if (isDesktop) {
@@ -44,7 +45,23 @@ const Testimonials: React.FC = () => {
     )
   }
 
-  if (isTablet) {
+  if (isMediumTablet) {
+    const groups = splitArrayIntoGroups(testimonials, 2);
+    return (
+      <>
+        {recentWork}
+        <div className="testimonials">
+          {groups.map((group, index) => (
+            <div key={index} className="group">
+              {group}
+            </div>
+          ))}
+        </div>
+      </>
+    )
+  }
+
+  if (isLargeTablet) {
     const groups = splitArrayIntoGroups([recentWork, ...testimonials], 2);
     return (
       <div className="testimonials">

@@ -1,4 +1,5 @@
 nav {
+  background-color: #F3EFEB;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +13,19 @@ nav {
   padding: 16px 24px;
   font-family: 'Satoshi', sans-serif;
   line-height: 24px;
+}
+
+nav::before {
+  content: "";
+  background: url("/public/background.png") lightgray 0% 0% / 100px 100px repeat;
+  background-size: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 nav a {

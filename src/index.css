@@ -49,7 +49,7 @@ html {
 
 html::before {
   content: "";
-  background: url("/public/background.png") lightgray 0% 0% / 100px 100px repeat;
+  background: url("/background.png") lightgray 0% 0% / 100px 100px repeat;
   background-size: auto;
   position: absolute;
   top: 0px;

@@ -5,3 +5,10 @@
   padding: 2rem;
   text-align: center; */
 }
+
+
+.button:hover {
+  background: #FFDC41;
+  color: #241D16;
+  border: 1px solid #241D16;
+}

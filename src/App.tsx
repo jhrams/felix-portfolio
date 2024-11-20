@@ -3,6 +3,7 @@ import { NavbarHeightProvider } from './context/NavbarHeightContext';
 import './App.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home'
 import Structure from './pages/Structure'
 import Contact from './pages/Contact'
@@ -12,6 +13,7 @@ function App() {
   return (
     <NavbarHeightProvider>
       <Router>
+        <ScrollToTop />
         <Nav mobileTitle={NAV_MOBILE_TITLE} title={NAV_TITLE} />
         <Routes>
           <Route path="/" Component={Home} />

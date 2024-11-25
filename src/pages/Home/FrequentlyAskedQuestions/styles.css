@@ -20,6 +20,8 @@
 .faq-item {
   border-top: 2px solid #241D16;
   padding: 16px 0px;
+  flex: 1;
+  width: 100%;
 }
 
 .faq .faq-item:last-child {

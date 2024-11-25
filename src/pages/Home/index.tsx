@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import { useNavbarHeight } from '../../context/NavbarHeightContext';
 
 import ProfileHeader from './ProfileHeader';
@@ -13,14 +14,21 @@ const Home: React.FC = () => {
   const { navbarHeight } = useNavbarHeight();
 
   return (
-    <div className="home-page" style={{ marginTop: `${navbarHeight}px` }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
+      key="home" className="home-page"
+      style={{ marginTop: `${navbarHeight}px` }}
+    >
       <ProfileHeader />
       <AboutFractional />
       <Testimonials />
       <GetStarted />
       <FrequentlyAskedQuestions />
       <FractionalContact />
-    </div>
+    </motion.div>
+
   );
 }
 

@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import { useNavbarHeight } from '../../context/NavbarHeightContext';
 import {
   STRUCTURE_TITLE,
@@ -15,7 +16,14 @@ const Structure: React.FC = () => {
   const { navbarHeight } = useNavbarHeight();
 
   return (
-    <div className='structure-page' style={{ marginTop: `${navbarHeight}px` }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
+      key="structure"
+      className='structure-page'
+      style={{ marginTop: `${navbarHeight}px` }}
+    >
       <h1 className='structure-title'>{STRUCTURE_TITLE}</h1>
       <div className='project-trial-button-container'>
         <img src="structure-circle.png" alt="structure-circle" className='structure-circle' />
@@ -62,7 +70,7 @@ const Structure: React.FC = () => {
       <img src="structure-bottom-dots.png" alt="structure-bottom-dots" className='structure-bottom-dots' />
       <img src="structure-top-xl-dots.png" alt="structure-top-xl-dots" className='structure-top-xl-dots' />
       <img src="structure-top-l-dots.png" alt="structure-top-l-dots" className='structure-top-l-dots' />
-    </div>
+    </motion.div>
   )
 }
 

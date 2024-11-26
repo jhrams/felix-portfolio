@@ -36,7 +36,7 @@ const Footer: React.FC<FooterProps> = ({ title, email, copyright }) => {
             <PageLinks />
           </div>
           <div className="container">
-            <strong>{email}</strong>
+            <a className="mailto" href={`mailto:${email}`}><strong>{email}</strong></a>
             <p>{copyright}</p>
           </div>
         </>

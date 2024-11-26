@@ -17,12 +17,7 @@ const testimonials = TESTIMONIALS.map((testimonial, index) => (
   />
 ))
 
-const recentWork = (
-  <div className="recent-work">
-    <i className="fas fa-tv" />
-    <a href={RECENT_WORK_URL}>{VIEW_RECENT_WORK}</a>
-  </div>
-)
+const recentWork = <a className="recent-work" href={RECENT_WORK_URL}><i className="tv-icon fas fa-tv" />{VIEW_RECENT_WORK}</a>
 
 const Testimonials: React.FC = () => {
   const windowWidth = useWindowWidth();

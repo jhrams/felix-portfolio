@@ -52,8 +52,8 @@ const TestimonialDetail: React.FC = () => {
       style={{ marginTop: `${navbarHeight}px` }}
     >
       <div className='detail-title-container'>
-        <a className="detail-back" href="#" onClick={handleBackClick}>Back</a>
-        <a className="detail-next" href="#" onClick={handleNextClick}>Next</a>
+        <a className="detail-button detail-back" href="#" onClick={handleBackClick}>Back</a>
+        <a className="detail-button detail-next" href="#" onClick={handleNextClick}>Next</a>
         <h1 className="detail-title">{companyName}</h1>
         <span className="detail-description">
           {companyDescription}

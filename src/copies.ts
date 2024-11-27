@@ -116,7 +116,7 @@ const TESTIMONIALS = [
     authorProfile: "nirvana3.png",
     backgroundColor: "#2C1F45",
     fontColor: "#FFFFFF",
-    hasDetails: false
+    hasDetails: true
   },
   {
     companyName: "castmagic",
@@ -130,7 +130,7 @@ const TESTIMONIALS = [
     authorProfile: "castmagic2.png",
     backgroundColor: "#0D0B08",
     fontColor: "#FFFFFF",
-    hasDetails: false
+    hasDetails: true
   },
   {
     companyName: "mammoth",
@@ -158,7 +158,7 @@ const TESTIMONIALS = [
     authorProfile: "sindi2.png",
     backgroundColor: "#EF616E",
     fontColor: "#FFFFFF",
-    hasDetails: false
+    hasDetails: true
   },
   {
     companyName: "atlas",
@@ -172,7 +172,7 @@ const TESTIMONIALS = [
     authorProfile: "atlas3.png",
     backgroundColor: "#0B0B5B",
     fontColor: "#FFFFFF",
-    hasDetails: false
+    hasDetails: true
   },
   {
     companyName: "wefunder",
@@ -186,7 +186,7 @@ const TESTIMONIALS = [
     authorProfile: "wefunder2.png",
     backgroundColor: "#0A76D1",
     fontColor: "#FFFFFF",
-    hasDetails: false
+    hasDetails: true
   },
   {
     companyName: "vibrant",
@@ -270,19 +270,90 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorTitle: "Founder",
     figmaURL: "https://embed.figma.com/design/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4931-3185&m=dev&embed-host=share",
   },
+  nirvana: {
+    companyName: "Nirvana",
+    companyDescription: "A high-touch recruiting service for US startups looking to hire abroad",
+    companyURL: "",
+    duration: "Aug 2022 - Present",
+    collaborators: "Collaborators: CPO, 1 PM, 1 Eng",
+    structureType: "Monthly retainer",
+    contribution: "Kelvin and various teams use my prototypes and mockups for client discovery and design partner sessions. These concepts typically get built the following quarter(s). Billing managers have reported their teams’ daily policies processed went from 80 to 150 after Nirvana.",
+    testimonial: "Felix knows deeply how to design both detailed UX/UI’s and also the large art of visioning. This has been critical for conveying everything from our mission and vision to delivering a strong experience for our users.",
+    authorPic: "nirvana3.png",
+    authorName: "Kelvin Chan",
+    authorTitle: "Co-Founder, CPO & President ",
+    figmaURL: "",
+  },
+  sindi: {
+    companyName: "Sindi",
+    companyDescription: "Modernizing dental referral forms, file transfers and communication",
+    companyURL: "",
+    duration: "July 2023 - Present",
+    collaborators: "Collaborator: Co-founder",
+    structureType: "Hourly",
+    contribution: "I created scaleable foundations for the product’s core pieces: navigation,, the creation of referrals, and referral workflow management. Changes and additions to referral workflows are now trivial with minimal UX cost.",
+    testimonial: "Felix’s diverse experience and continual learning across industries translate seamlessly into not only best design practices but also a strategic, big-picture approach. \nHe’s more than just an exceptional designer who delivers high-fidelity UI; he becomes an integral extension of your team, contributing far beyond the scope of design.",
+    authorPic: "sindi2.png",
+    authorName: "Shane Roach",
+    authorTitle: "Co-founder & CEO",
+    figmaURL: "",
+  },
+  wefunder: {
+    companyName: "Wefunder",
+    companyDescription: "Meaningful community fundraising for both investors and founders",
+    companyURL: "",
+    duration: "September 2023 - Present",
+    collaborators: "Collaborators: 2 PMs, 2-3 Eng",
+    structureType: "Hourly with minimum retainer",
+    contribution: "I was embedded into multiple teams that wanted to deepen founder-investor engagement, which in turn leads to higher investment volume.",
+    testimonial: "I love working with Felix because everyone feels excited about the product afterwards. \nHe doesn’t just deliver designs, but goes above and beyond to be a valuable thought partner looking after the big-picture business goals as well as the details like proposing better microcopy. Also, he’s so freaking fast. We love Felix!",
+    authorPic: "wefunder2.png",
+    authorName: "Geena Chen",
+    authorTitle: "Product Lead",
+    figmaURL: "",
+  },
+  castmagic: {
+    companyName: "Castmagic",
+    companyDescription: "Automagically turning media into any kind of static/written content",
+    companyURL: "",
+    duration: "March 2024 - Oct 2024",
+    collaborators: "Collaborator: Co-founder",
+    structureType: "Monthly retainer",
+    contribution: "I redesigned Castmagic’s onboarding so we could show how static content gets instantly generated from any source recording. Users previously had a lengthy setup before they could generate anything at all.",
+    testimonial: "Felix helped us reduce new users’ time to value and launch our content pipeline feature. For every problem, he always provides multiple solutions and the turnaround is really fast. \nFelix has the technical skills, problem-solving abilities, and creativity to enhance any core product experience. 100% would recommend him to any other startup team.",
+    authorPic: "castmagic2.png",
+    authorName: "Blaine Bolus",
+    authorTitle: "Co-founder",
+    figmaURL: "",
+  },
+  atlas: {
+    companyName: "Atlas",
+    companyDescription: "An accessible credit building product",
+    companyURL: "",
+    duration: "Jun 2023 - Jan 2024",
+    collaborators: "Collaborators: 2 Co-founders, 1-2 Eng",
+    structureType: "Monthly retainer",
+    contribution: "I created key touch-points (onboarding, home, rewards) that showed what the product offers. In 45 days after implementation, Atlas’ customer complaint volume went down 50% from 12,000/wk to 6,000/wk because of design.",
+    testimonial: "Felix is by far one of the best product designers I’ve worked with. And we’ve {both co-founders}  worked with a lot of designers back at Facebook.",
+    authorPic: "atlas3.png",
+    authorName: "Vetri Balaji",
+    authorTitle: "Co-founder & CTO",
+    figmaURL: "",
+  },
   // nirvana: {
-  // companyName: "",
-  // companyDescription: "",
-  // companyURL: "",
-  // duration: "",
-  // structureType: "",
-  // contribution: "",
-  // testimonial: "",
-  // authorPic: "",
-  // authorName: "",
-  // authorTitle: "",
-  // figmaURL: "",
-  // }
+  //   companyName: "",
+  //   companyDescription: "",
+  //   companyURL: "",
+  //   duration: "",
+  //   collaborators: "",
+  //   structureType: "",
+  //   contribution: "",
+  //   testimonial: "",
+  //   authorPic: "",
+  //   authorName: "",
+  //   authorTitle: "",
+  //   figmaURL: "",
+  // },
 }
 
 export {

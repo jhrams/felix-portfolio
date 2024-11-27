@@ -33,10 +33,9 @@
   letter-spacing: -0.7px;
 }
 
-.detail-back {
+.detail-button {
   position: absolute;
   top: 0;
-  left: 24px;
   border: 1px solid #241D16;
   font-family: Satoshi;
   font-size: 13px;
@@ -45,6 +44,14 @@
   line-height: 19px;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+.detail-back {
+  left: 24px;
+}
+
+.detail-next {
+  right: 24px;
 }
 
 .detail-description {
@@ -92,6 +99,7 @@
 
 .detail-contribution {
   line-height: 24px;
+  margin-left: 4px;
 }
 
 .detail-retainer-container>*:not(:last-child) {

@@ -78,6 +78,20 @@
   border-right: 1px solid #241D16;
   padding: 32px;
   position: relative;
+  flex: 1;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.icon-text-container {
+  display: flex;
+}
+
+.detail-contribution {
+  line-height: 24px;
 }
 
 .detail-retainer-container>*:not(:last-child) {
@@ -88,22 +102,28 @@
 .fa-users,
 .fa-pencil-alt,
 .fa-star {
+  text-align: center;
   margin-right: 8px;
+  width: 24px;
+  height: 24px;
 }
 
 .detail-testimonial-container {
   padding: 32px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .detail-author-pic-container {
   display: flex;
+  margin-top: 16px;
 }
 
 .detail-author-container {
   display: flex;
   flex-direction: column;
+  margin-left: 8px;
 }
 
 .testimonial-detail-right {

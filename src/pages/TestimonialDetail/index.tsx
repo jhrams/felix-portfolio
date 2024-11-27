@@ -64,22 +64,22 @@ const TestimonialDetail: React.FC = () => {
       </div>
       <div className="retainer-testimonial-container">
         <div className="detail-retainer-container">
-          <span>
+          <div className="icon-text-container">
             <i className="far fa-calendar" />
-            {duration}
-          </span>
-          <span>
+            <p>{duration}</p>
+          </div>
+          <div className="icon-text-container">
             <i className="fas fa-users" />
-            {collaborators}
-          </span>
-          <span>
+            <p>{collaborators}</p>
+          </div>
+          <div className="icon-text-container">
             <i className="fas fa-pencil-alt" />
-            {structureType}
-          </span>
-          <span>
+            <p>{structureType}</p>
+          </div>
+          <div className="icon-text-container detail-contribution">
             <i className="far fa-star" />
-            {contribution}
-          </span>
+            <p>{contribution}</p>
+          </div>
         </div>
         <div className="detail-testimonial-container">
           <p className="detail-testimonial">{testimonial}</p>

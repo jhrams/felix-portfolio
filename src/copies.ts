@@ -23,6 +23,21 @@ interface TrialModel {
   flatFee: string;
 }
 
+interface TestimonialDetail {
+  companyName: string;
+  companyDescription: string;
+  companyURL: string;
+  duration: string;
+  collaborators: string;
+  structureType: string;
+  contribution: string;
+  testimonial: string;
+  authorPic: string;
+  authorName: string;
+  authorTitle: string;
+  figmaURL: string;
+}
+
 const NAV_TITLE: string = 'FELIX.DESIGN';
 const FOOTER_TITLE: string = 'FELIX.DESIGN';
 const EMAIL: string = 'felix.lau.design@gmail.com';
@@ -76,120 +91,129 @@ const RECENT_WORK_URL = "https://www.figma.com/proto/m892XlZtYvrOK7UdY2Apap/2024
 
 const TESTIMONIALS = [
   {
-    companyIcon: `candor1.svg`,
-    companyNameIcon: `candor2.svg`,
-    testimonial1: 'Felix joined Candor as our first hire. He has an exceptional level of intuition for what we should build and when, coupled with a very high bar for execution. Candor wouldn’t be where it is today without him.',
-    testimonial2: '',
-    author: 'Kelsey Bishop',
-    companyTitle: 'Candor, Founder',
-    sector: 'HR Tech: Recruiting',
-    authorProfile: `candor3.png`,
-    backgroundColor: '#2F657A',
-    fontColor: '#FFFFFF',
+    companyName: "candor",
+    companyIcon: "candor1.svg",
+    companyNameIcon: "candor2.svg",
+    testimonial1: "Felix joined Candor as our first hire. He has an exceptional level of intuition for what we should build and when, coupled with a very high bar for execution. Candor wouldn’t be where it is today without him.",
+    testimonial2: "",
+    author: "Kelsey Bishop",
+    companyTitle: "Candor, Founder",
+    sector: "HR Tech: Recruiting",
+    authorProfile: "candor3.png",
+    backgroundColor: "#2F657A",
+    fontColor: "#FFFFFF",
     hasDetails: true
   },
   {
-    companyIcon: `nirvana1.svg`,
-    companyNameIcon: `nirvana2.svg`,
-    testimonial1: 'Felix knows deeply how to design both detailed UX/UI as well as the art of large visioning.',
-    testimonial2: 'This has been critical for conveying everything from our mission and vision to delivering a strong experience for our users.',
-    author: 'Kelvin Chan',
-    companyTitle: 'Nirvana, Co-Founder, CPO & President ',
-    sector: 'Medtech: Health Insurance',
-    authorProfile: `nirvana3.png`,
-    backgroundColor: '#2C1F45',
-    fontColor: '#FFFFFF',
+    companyName: "nirvana",
+    companyIcon: "nirvana1.svg",
+    companyNameIcon: "nirvana2.svg",
+    testimonial1: "Felix knows deeply how to design both detailed UX/UI as well as the art of large visioning.",
+    testimonial2: "This has been critical for conveying everything from our mission and vision to delivering a strong experience for our users.",
+    author: "Kelvin Chan",
+    companyTitle: "Nirvana, Co-Founder, CPO & President ",
+    sector: "Medtech: Health Insurance",
+    authorProfile: "nirvana3.png",
+    backgroundColor: "#2C1F45",
+    fontColor: "#FFFFFF",
     hasDetails: false
   },
   {
-    companyIcon: `castmagic1.svg`,
-    companyNameIcon: '',
-    testimonial1: 'Felix helped us reduce new users’ time to value and launch our content pipeline feature.',
-    testimonial2: 'For every problem, he always provides multiple solutions and the turnaround is really fast. Felix has the technical skills, problem-solving abilities, and creativity to enhance any core product experience. 100% would recommend him to any other startup team.',
-    author: 'Blaine Bolus',
-    companyTitle: 'Co-Founder',
-    sector: 'Podcast/Audio: AI Tools',
-    authorProfile: `castmagic2.png`,
-    backgroundColor: '#0D0B08',
-    fontColor: '#FFFFFF',
+    companyName: "castmagic",
+    companyIcon: "castmagic1.svg",
+    companyNameIcon: "",
+    testimonial1: "Felix helped us reduce new users’ time to value and launch our content pipeline feature.",
+    testimonial2: "For every problem, he always provides multiple solutions and the turnaround is really fast. Felix has the technical skills, problem-solving abilities, and creativity to enhance any core product experience. 100% would recommend him to any other startup team.",
+    author: "Blaine Bolus",
+    companyTitle: "Co-Founder",
+    sector: "Podcast/Audio: AI Tools",
+    authorProfile: "castmagic2.png",
+    backgroundColor: "#0D0B08",
+    fontColor: "#FFFFFF",
     hasDetails: false
   },
   {
-    companyIcon: `mammoth1.svg`,
-    companyNameIcon: '',
+    companyName: "mammoth",
+    companyIcon: "mammoth1.svg",
+    companyNameIcon: "",
     testimonial1: "Felix has been an unlock for Mammoth. I've struggled to find designers who can get up to speed on our domain quickly enough to drive real value and iterate with me as quickly as I'd like.",
     testimonial2: "Felix realized early on that instead of spending hours on process and documentation, the fastest way to value was to do live design sessions with me in which we work through user stories together and translate product requirements into UI in realtime. It's been transformative, and I think it's a truly unique approach to building product 0>1.",
-    author: 'Julia Cohen',
-    companyTitle: 'Mammoth, Founder & CEO',
-    sector: 'B2B: CPG',
-    authorProfile: `mammoth2.png`,
-    backgroundColor: '#4A41FD',
-    fontColor: '#FFFFFF',
+    author: "Julia Cohen",
+    companyTitle: "Mammoth, Founder & CEO",
+    sector: "B2B: CPG",
+    authorProfile: "mammoth2.png",
+    backgroundColor: "#4A41FD",
+    fontColor: "#FFFFFF",
     hasDetails: false
   },
   {
-    companyIcon: `sindi1.svg`,
-    companyNameIcon: '',
-    testimonial1: 'Felix’s diverse experience and continual learning across industries translate seamlessly into not only best design practices but also a strategic, big-picture approach.',
-    testimonial2: 'He’s more than just an exceptional designer who delivers high-fidelity UI; he becomes an integral extension of your team, contributing far beyond the scope of design.',
-    author: 'Shane Roach',
-    companyTitle: 'Sindi, Co-founder & CEO ',
-    sector: 'Medtech: Dental SaaS',
-    authorProfile: `sindi2.png`,
-    backgroundColor: '#EF616E',
-    fontColor: '#FFFFFF',
+    companyName: "sindi",
+    companyIcon: "sindi1.svg",
+    companyNameIcon: "",
+    testimonial1: "Felix’s diverse experience and continual learning across industries translate seamlessly into not only best design practices but also a strategic, big-picture approach.",
+    testimonial2: "He’s more than just an exceptional designer who delivers high-fidelity UI; he becomes an integral extension of your team, contributing far beyond the scope of design.",
+    author: "Shane Roach",
+    companyTitle: "Sindi, Co-founder & CEO ",
+    sector: "Medtech: Dental SaaS",
+    authorProfile: "sindi2.png",
+    backgroundColor: "#EF616E",
+    fontColor: "#FFFFFF",
     hasDetails: false
   },
   {
-    companyIcon: `atlas1.svg`,
-    companyNameIcon: `atlas2.svg`,
-    testimonial1: 'Felix is by far one of the best product designers I’ve worked with. And we’ve {co-founders}  worked with a lot of designers back at Facebook.',
-    testimonial2: '',
-    author: 'Vetri Balaji',
-    companyTitle: 'Atlas, Co-Founder & CTO',
-    sector: 'Fintech: Credit Card',
-    authorProfile: `atlas3.png`,
-    backgroundColor: '#0B0B5B',
-    fontColor: '#FFFFFF',
+    companyName: "atlas",
+    companyIcon: "atlas1.svg",
+    companyNameIcon: "atlas2.svg",
+    testimonial1: "Felix is by far one of the best product designers I’ve worked with. And we’ve {co-founders}  worked with a lot of designers back at Facebook.",
+    testimonial2: "",
+    author: "Vetri Balaji",
+    companyTitle: "Atlas, Co-Founder & CTO",
+    sector: "Fintech: Credit Card",
+    authorProfile: "atlas3.png",
+    backgroundColor: "#0B0B5B",
+    fontColor: "#FFFFFF",
     hasDetails: false
   },
   {
-    companyIcon: `wefunder1.png`,
-    companyNameIcon: '',
-    testimonial1: 'I love working with Felix because everyone feels excited about the product afterwards.',
-    testimonial2: 'He doesn’t just deliver designs, but goes above and beyond to be a valuable thought partner looking after the big-picture business goals as well as the details like proposing better microcopy. Also, he’s so freaking fast. We love Felix!',
-    author: 'Geena Chen',
-    companyTitle: 'Wefunder, Product Lead',
-    sector: 'Fintech: Fundraising',
-    authorProfile: `wefunder2.png`,
-    backgroundColor: '#0A76D1',
-    fontColor: '#FFFFFF',
+    companyName: "wefunder",
+    companyIcon: "wefunder1.png",
+    companyNameIcon: "",
+    testimonial1: "I love working with Felix because everyone feels excited about the product afterwards.",
+    testimonial2: "He doesn’t just deliver designs, but goes above and beyond to be a valuable thought partner looking after the big-picture business goals as well as the details like proposing better microcopy. Also, he’s so freaking fast. We love Felix!",
+    author: "Geena Chen",
+    companyTitle: "Wefunder, Product Lead",
+    sector: "Fintech: Fundraising",
+    authorProfile: "wefunder2.png",
+    backgroundColor: "#0A76D1",
+    fontColor: "#FFFFFF",
     hasDetails: false
   },
   {
-    companyIcon: `vibrant1.svg`,
-    companyNameIcon: '',
-    testimonial1: 'In our journey from v0-1, Felix has helped us iterate through many versions of what Vibrant could be.',
-    testimonial2: 'Felix can relentlessly frame and reframe problems. Combined with his previous years in health tech, he has helped us stay nimble and focused as we narrow in on our product vision.',
-    author: 'Sunita Mohanty',
-    companyTitle: 'Vibrant, Co-Founder & CEO',
-    sector: 'Medtech: AI-augmented EHR',
-    authorProfile: `vibrant2.png`,
-    backgroundColor: '#646054',
-    fontColor: '#FFFFFF',
+    companyName: "vibrant",
+    companyIcon: "vibrant1.svg",
+    companyNameIcon: "",
+    testimonial1: "In our journey from v0-1, Felix has helped us iterate through many versions of what Vibrant could be.",
+    testimonial2: "Felix can relentlessly frame and reframe problems. Combined with his previous years in health tech, he has helped us stay nimble and focused as we narrow in on our product vision.",
+    author: "Sunita Mohanty",
+    companyTitle: "Vibrant, Co-Founder & CEO",
+    sector: "Medtech: AI-augmented EHR",
+    authorProfile: "vibrant2.png",
+    backgroundColor: "#646054",
+    fontColor: "#FFFFFF",
     hasDetails: false
   },
   {
-    companyIcon: `forward1.png`,
-    companyNameIcon: '',
-    testimonial1: 'Felix pulled together in record speeds the v1 vision of Forward from a handful of documents – some wireframes, some Google Docs, and a sprinkling of meetings. ',
-    testimonial2: 'It’s been amazing to get the user feedback with glowing reviews about how easy the platform is to use, and what a delight it is to job match on Forward – Felix had a direct hand in this!',
-    author: 'Mariam Matan',
-    companyTitle: 'Forward, Co-Founder',
-    sector: 'HR Tech: Job Matching',
-    authorProfile: `forward2.png`,
-    backgroundColor: '#FFFFFF',
-    fontColor: '##241D16',
+    companyName: "forward",
+    companyIcon: "forward1.png",
+    companyNameIcon: "",
+    testimonial1: "Felix pulled together in record speeds the v1 vision of Forward from a handful of documents – some wireframes, some Google Docs, and a sprinkling of meetings.",
+    testimonial2: "It’s been amazing to get the user feedback with glowing reviews about how easy the platform is to use, and what a delight it is to job match on Forward – Felix had a direct hand in this!",
+    author: "Mariam Matan",
+    companyTitle: "Forward, Co-Founder",
+    sector: "HR Tech: Job Matching",
+    authorProfile: "forward2.png",
+    backgroundColor: "#FFFFFF",
+    fontColor: "#241D16",
     hasDetails: false
   },
 ]
@@ -231,6 +255,36 @@ const FAQS = [
 
 const FRACTIONAL: string = "Hire me fractionally today and I'll be your <span>design partner</span> by next week.";
 
+const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
+  candor: {
+    companyName: "Candor",
+    companyDescription: "A high-touch recruiting service for US startups looking to hire abroad",
+    companyURL: "https://www.joincandor.com/",
+    duration: "Nov 2021 - Present",
+    collaborators: "Collaborators: Founder, 2-4 Eng",
+    structureType: "Monthly retainer",
+    contribution: "I’ve shaped the entire product experience every step of the way from now back to the 3 previous pivots: from a backchannelling app; to a job network; to a teambuilding tool; to now a recruiting platform",
+    testimonial: "Felix joined Candor as our first hire. He has an exceptional level of intuition for what we should build and when, coupled with a very high bar for execution. Candor wouldn’t be where it is today without him.",
+    authorPic: "candor3.png",
+    authorName: "Kelsey Bishop",
+    authorTitle: "Founder",
+    figmaURL: "https://embed.figma.com/design/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4931-3185&m=dev&embed-host=share",
+  },
+  // nirvana: {
+  // companyName: "",
+  // companyDescription: "",
+  // companyURL: "",
+  // duration: "",
+  // structureType: "",
+  // contribution: "",
+  // testimonial: "",
+  // authorPic: "",
+  // authorName: "",
+  // authorTitle: "",
+  // figmaURL: "",
+  // }
+}
+
 export {
   NAV_TITLE,
   FOOTER_TITLE,
@@ -253,5 +307,6 @@ export {
   FAQ_TITLE,
   FAQS,
   FRACTIONAL,
-  RECENT_WORK_URL
+  RECENT_WORK_URL,
+  TESTIMONIAL_DETAILS
 };

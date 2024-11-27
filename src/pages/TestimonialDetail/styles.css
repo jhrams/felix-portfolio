@@ -1,0 +1,148 @@
+.testimonial-detail-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-detail-page>* {
+  margin-bottom: 24px;
+}
+
+
+.detail-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.detail-title {
+  color: #241D16;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  /* H1 */
+  font-family: Literata;
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 69px;
+  /* 113.115% */
+  letter-spacing: -0.7px;
+}
+
+.detail-back {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  border: 1px solid #241D16;
+  font-family: Satoshi;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.detail-description {
+  color: #241D16;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+
+  /* Body/M */
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.detail-link {
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.retainer-testimonial-container {
+  display: flex;
+  border: 1px solid #241D16;
+  width: 800px;
+}
+
+.detail-retainer-container {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #241D16;
+  padding: 32px;
+  position: relative;
+}
+
+.detail-retainer-container>*:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.fa-calendar,
+.fa-users,
+.fa-pencil-alt,
+.fa-star {
+  margin-right: 8px;
+}
+
+.detail-testimonial-container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-author-pic-container {
+  display: flex;
+}
+
+.detail-author-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-detail-right {
+  position: absolute;
+  right: 0;
+  top: 450px;
+}
+
+.testimonial-detail-left {
+  position: absolute;
+  top: 275px;
+  left: 0;
+}
+
+.detail-testimonial {
+  color: #241D16;
+  /* H3 */
+  font-family: Literata;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 150% */
+}
+
+.detail-author-name {
+  color: #241D16;
+  /* Body/M */
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.detail-author-title {
+  font-family: Satoshi;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}

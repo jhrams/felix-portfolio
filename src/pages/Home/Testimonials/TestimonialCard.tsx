@@ -1,4 +1,6 @@
+import { BASE_URL } from "../../../constants";
 interface TestimonialCardProps {
+  companyName: string;
   companyIcon: string;
   companyNameIcon: string;
   testimonial1: string;
@@ -13,6 +15,7 @@ interface TestimonialCardProps {
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
+  companyName,
   companyIcon,
   companyNameIcon,
   testimonial1,
@@ -25,7 +28,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   fontColor,
   hasDetails,
 }) => (
-  <div className="testimonial-card" style={{ backgroundColor, color: fontColor }}>
+  <div id={`testimonials-section-${companyName}`} className="testimonial-card" style={{ backgroundColor, color: fontColor }}>
     {companyIcon && <img src={companyIcon} alt="Company Icon" className="company-icon" />}
     {companyNameIcon && <img src={companyNameIcon} alt="Company Name Icon" className="company-name-icon" />}
     <p className="sector">{sector}</p>
@@ -39,7 +42,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           <p className="company-title">{companyTitle}</p>
         </div>
       </div>
-      {hasDetails && <img src="arrow.svg" alt="arrow" className="arrow" />}
+      {hasDetails && (
+        <a href={`${BASE_URL}/#/testimonials?company=${companyName}`}>
+          <img src="arrow.svg" alt="arrow" className="arrow" />
+        </a>
+      )}
     </div>
   </div>
 );

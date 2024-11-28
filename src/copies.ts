@@ -40,7 +40,7 @@ interface TestimonialDetail {
 
 const NAV_TITLE: string = 'FELIX.DESIGN';
 const FOOTER_TITLE: string = 'FELIX.DESIGN';
-const EMAIL: string = 'felix.lau.design@gmail.com';
+const EMAIL: string = 'hello@felix.design';
 const COPYRIGHT: string = '© 2024 Felix Lau';
 const NAV_MOBILE_TITLE: string = 'F.D';
 const STRUCTURE_TITLE: string = 'How we can work together';
@@ -71,6 +71,7 @@ const TRIAL_MODEL: TrialModel = {
 
 const GET_IN_TOUCH: string = 'Get in touch';
 const CONTACT_DESCRIPTION: string = '<strong>Spend 30 minutes</strong> discussing your businesses needs and getting to know each other.'
+const CONTACT_EMAIL_DESCRIPTION: string = "Or directly reach out at <a href=\"mailto:hello@felix.design\"><strong>hello@felix.design</strong></a>"
 
 const HOME_TITLE: string = "I’m a fractional product designer for early stage startups";
 const HOME_DESCRIPTION: string = "Working with startups on everything from finding PMF to fundraising"
@@ -368,6 +369,7 @@ export {
   TRIAL_MODEL,
   GET_IN_TOUCH,
   CONTACT_DESCRIPTION,
+  CONTACT_EMAIL_DESCRIPTION,
   WHY_FRACTIONAL,
   VIEW_RECENT_WORK,
   TESTIMONIALS,

@@ -20,7 +20,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
       <h3 onClick={toggleAccordion} className="faq-question">
         {question}
         <span className="faq-icon">
-          {isOpen ? <i className="fas fa-minus" /> : <i className="fas fa-plus" />}
+          {isOpen ? <img src="minus.svg" alt="minus" /> : <img src="plus.svg" alt="plus" />}
         </span>
       </h3>
       <div className={`faq-answer ${isOpen ? 'open' : ''}`}>

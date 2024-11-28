@@ -71,7 +71,7 @@ const TRIAL_MODEL: TrialModel = {
 
 const GET_IN_TOUCH: string = 'Get in touch';
 const CONTACT_DESCRIPTION: string = '<strong>Spend 30 minutes</strong> discussing your businesses needs and getting to know each other.'
-const CONTACT_EMAIL_DESCRIPTION: string = "Or directly reach out at <a href=\"mailto:hello@felix.design\"><strong>hello@felix.design</strong></a>"
+const CONTACT_EMAIL_DESCRIPTION: string = "Or directly reach out at <a href=\"mailto:hello@felix.design\">hello@felix.design</a>"
 
 const HOME_TITLE: string = "I’m a fractional product designer for early stage startups";
 const HOME_DESCRIPTION: string = "Working with startups on everything from finding PMF to fundraising"

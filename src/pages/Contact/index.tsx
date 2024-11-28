@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 import { InlineWidget } from "react-calendly";
 import { useNavbarHeight } from '../../context/NavbarHeightContext';
-import { GET_IN_TOUCH, CONTACT_DESCRIPTION } from '../../copies'
+import { GET_IN_TOUCH, CONTACT_DESCRIPTION, CONTACT_EMAIL_DESCRIPTION } from '../../copies'
 import { renderText } from '../../utils';
 
 import './styles.css'
@@ -21,6 +21,7 @@ const Contact: React.FC = () => {
       <div className='contact-title-container'>
         <h1 className='contact-title'>{GET_IN_TOUCH}</h1>
         <p className='contact-description'>{renderText(CONTACT_DESCRIPTION)}</p>
+        <p className='contact-description'>{renderText(CONTACT_EMAIL_DESCRIPTION)}</p>
       </div>
       <InlineWidget url="https://calendly.com/felix-lau/30min" />
       <img src="contact-dots.svg" alt="contact-dots" className="contact-dots" />

@@ -91,8 +91,8 @@ const TestimonialDetail: React.FC = () => {
             </div>
           </div>
         </div>
-        <img className="testimonial-detail-left" src="testimonial-detail-left.png" />
-        <img className="testimonial-detail-right" src="testimonial-detail-right.png" />
+        <img className="testimonial-detail-left" src="testimonial-detail-left.svg" />
+        <img className="testimonial-detail-right" src="testimonial-detail-right.svg" />
       </div>
       <div className='detail-iframe-container'>
         <iframe style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width="800" height="450" src={figmaURL} allowFullScreen />

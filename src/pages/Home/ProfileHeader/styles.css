@@ -160,6 +160,10 @@
   .profile-header-l-dots {
     display: none;
   }
+
+  .profile {
+    width: 15%;
+  }
 }
 
 @media (max-width: 680px) {

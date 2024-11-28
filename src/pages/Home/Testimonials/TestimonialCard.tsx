@@ -1,8 +1,7 @@
 import { BASE_URL } from "../../../constants";
 interface TestimonialCardProps {
   companyName: string;
-  companyIcon: string;
-  companyNameIcon: string;
+  companyLogo: string;
   testimonial1: string;
   testimonial2: string;
   author: string;
@@ -16,8 +15,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
   companyName,
-  companyIcon,
-  companyNameIcon,
+  companyLogo,
   testimonial1,
   testimonial2,
   author,
@@ -29,8 +27,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   hasDetails,
 }) => (
   <div id={`testimonials-section-${companyName}`} className="testimonial-card" style={{ backgroundColor, color: fontColor }}>
-    {companyIcon && <img src={companyIcon} alt="Company Icon" className="company-icon" />}
-    {companyNameIcon && <img src={companyNameIcon} alt="Company Name Icon" className="company-name-icon" />}
+    <div className="company-icon-container">
+      {companyLogo && <img src={companyLogo} alt="Company Logo" className="company-logo" />}
+    </div>
     <p className="sector">{sector}</p>
     <p className="testimonial">{testimonial1}</p>
     <p className="sub-testimonial">{testimonial2}</p>

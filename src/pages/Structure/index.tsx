@@ -26,7 +26,7 @@ const Structure: React.FC = () => {
     >
       <h1 className='structure-title'>{STRUCTURE_TITLE}</h1>
       <div className='project-trial-button-container'>
-        <img src="structure-circle.png" alt="structure-circle" className='structure-circle' />
+        <img src="structure-circle.svg" alt="structure-circle" className='structure-circle' />
         <div className='retainer-box'>
           <div className='retainer-title-container'>
             <h2 className='retainer-title'>{RETAINER_MODEL.title}</h2>
@@ -67,9 +67,9 @@ const Structure: React.FC = () => {
           <a className='button structure-button' href={`${BASE_URL}/#/contact`}>{GET_IN_TOUCH}</a>
         </div>
       </div>
-      <img src="structure-bottom-dots.png" alt="structure-bottom-dots" className='structure-bottom-dots' />
-      <img src="structure-top-xl-dots.png" alt="structure-top-xl-dots" className='structure-top-xl-dots' />
-      <img src="structure-top-l-dots.png" alt="structure-top-l-dots" className='structure-top-l-dots' />
+      <img src="structure-bottom-dots.svg" alt="structure-bottom-dots" className='structure-bottom-dots' />
+      <img src="structure-top-xl-dots.svg" alt="structure-top-xl-dots" className='structure-top-xl-dots' />
+      <img src="structure-top-l-dots.svg" alt="structure-top-l-dots" className='structure-top-l-dots' />
     </motion.div>
   )
 }

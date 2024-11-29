@@ -37,3 +37,12 @@ export const splitArrayIntoGroups = (array: any[], numGroups: number): any[][] =
 
   return groups;
 };
+
+export const getElementByIndex = (array: string[], index: number) => {
+  if (index < 0) {
+    return array[array.length + index];
+  } else if (index >= array.length) {
+    return array[index - array.length];
+  }
+  return array[index];
+};

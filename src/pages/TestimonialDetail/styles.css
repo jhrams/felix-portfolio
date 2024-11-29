@@ -23,20 +23,23 @@
   color: #241D16;
   text-align: center;
   font-feature-settings: 'liga' off, 'clig' off;
-  /* H1 */
   font-family: Literata;
   font-size: 61px;
   font-style: normal;
   font-weight: 300;
   line-height: 69px;
-  /* 113.115% */
   letter-spacing: -0.7px;
 }
 
+.navigation-buttons {
+  display: flex;
+  gap: 16px;
+}
+
 .detail-button {
-  position: absolute;
   top: 0;
   border: 1px solid #241D16;
+  color: #241D16;
   font-family: Satoshi;
   font-size: 13px;
   font-style: normal;
@@ -44,14 +47,7 @@
   line-height: 19px;
   padding: 8px 16px;
   text-decoration: none;
-}
-
-.detail-back {
-  left: 24px;
-}
-
-.detail-next {
-  right: 24px;
+  cursor: pointer;
 }
 
 .detail-description {
@@ -107,8 +103,8 @@
 }
 
 .fa-calendar,
-.fa-users,
-.fa-pencil-alt,
+.fa-people-group,
+.fa-pen-line,
 .fa-star {
   text-align: center;
   margin-right: 8px;

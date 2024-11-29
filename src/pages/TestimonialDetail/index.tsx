@@ -1,14 +1,20 @@
+import { useEffect } from "react";
 import { motion } from "motion/react"
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useNavbarHeight } from "../../context/NavbarHeightContext";
 import { TESTIMONIAL_DETAILS } from '../../copies';
 
 import "./styles.css"
+import { getElementByIndex } from "../../utils";
 
 const TestimonialDetail: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { navbarHeight } = useNavbarHeight();
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [location.search]);
 
   const queryParams = new URLSearchParams(location.search);
   const company = queryParams.get('company');
@@ -19,12 +25,21 @@ const TestimonialDetail: React.FC = () => {
     return <p>Testimonial not found</p>;
   }
 
-  const handleBackClick = () => {
-    navigate(`/#testimonials-section-${companyName}`);
+  // const handleBackClick = () => {
+  //   navigate(`/testimonials-section-${companyName}`);
+  // };
+
+
+  const handlePrevClick = () => {
+    const prevCompanyIndex = Object.keys(TESTIMONIAL_DETAILS).indexOf(company as string) - 1;
+    const prevCompany = getElementByIndex(Object.keys(TESTIMONIAL_DETAILS), prevCompanyIndex);
+    navigate(`/testimonials?company=${prevCompany}`);
   };
 
   const handleNextClick = () => {
-    navigate(`/#testimonials-section-${companyName}`);
+    const nextCompanyIndex = Object.keys(TESTIMONIAL_DETAILS).indexOf(company as string) + 1;
+    const nextCompany = getElementByIndex(Object.keys(TESTIMONIAL_DETAILS), nextCompanyIndex);
+    navigate(`/testimonials?company=${nextCompany}`);
   };
 
   const {
@@ -52,32 +67,30 @@ const TestimonialDetail: React.FC = () => {
       style={{ marginTop: `${navbarHeight}px` }}
     >
       <div className='detail-title-container'>
-        <a className="detail-button detail-back" href="#" onClick={handleBackClick}>Back</a>
-        <a className="detail-button detail-next" href="#" onClick={handleNextClick}>Next</a>
         <h1 className="detail-title">{companyName}</h1>
         <span className="detail-description">
           {companyDescription}
           <a href={companyURL}>
-            <i className="detail-link fas fa-link" />
+            <img src="fa-link.svg" alt="Star" className="detail-link fa-link" />
           </a>
         </span>
       </div>
       <div className="retainer-testimonial-container">
         <div className="detail-retainer-container">
           <div className="icon-text-container">
-            <i className="far fa-calendar" />
+            <img src="fa-calendar.svg" alt="Calendar" className="fa-calendar" />
             <p>{duration}</p>
           </div>
           <div className="icon-text-container">
-            <i className="fas fa-users" />
+            <img src="fa-people-group.svg" alt="People Group" className="fa-people-group" />
             <p>{collaborators}</p>
           </div>
           <div className="icon-text-container">
-            <i className="fas fa-pencil-alt" />
+            <img src="fa-pen-line.svg" alt="Pen Line" className="fa-pen-line" />
             <p>{structureType}</p>
           </div>
           <div className="icon-text-container detail-contribution">
-            <i className="far fa-star" />
+            <img src="fa-star.svg" alt="Star" className="fa-star" />
             <p>{contribution}</p>
           </div>
         </div>
@@ -96,6 +109,10 @@ const TestimonialDetail: React.FC = () => {
       </div>
       <div className='detail-iframe-container'>
         <iframe style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width="800" height="450" src={figmaURL} allowFullScreen />
+      </div>
+      <div className="navigation-buttons">
+        <a className="detail-button detail-prev" onClick={handlePrevClick}>Previous</a>
+        <a className="detail-button detail-next" onClick={handleNextClick}>Next</a>
       </div>
     </motion.div>
   )

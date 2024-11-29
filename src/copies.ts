@@ -260,7 +260,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "candor-portrait.svg",
     authorName: "Kelsey Bishop",
     authorTitle: "Founder",
-    figmaURL: "https://embed.figma.com/design/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4931-3185&m=dev&embed-host=share",
+    figmaURL: "https://embed.figma.com/design/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4815-8786&m=dev&embed-host=share",
   },
   nirvana: {
     companyName: "Nirvana",
@@ -332,20 +332,6 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorTitle: "Co-founder & CTO",
     figmaURL: "",
   },
-  // nirvana: {
-  //   companyName: "",
-  //   companyDescription: "",
-  //   companyURL: "",
-  //   duration: "",
-  //   collaborators: "",
-  //   structureType: "",
-  //   contribution: "",
-  //   testimonial: "",
-  //   authorPic: "",
-  //   authorName: "",
-  //   authorTitle: "",
-  //   figmaURL: "",
-  // },
 }
 
 export {

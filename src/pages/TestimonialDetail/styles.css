@@ -29,6 +29,7 @@
   font-weight: 300;
   line-height: 69px;
   letter-spacing: -0.7px;
+  margin: 24px 0;
 }
 
 .navigation-buttons {
@@ -64,15 +65,21 @@
   /* 150% */
 }
 
+.detail-link-container {
+  height: 24px;
+}
+
 .detail-link {
   text-decoration: none;
   margin-left: 8px;
+  width: 24px;
+  height: 24px;
 }
 
 .retainer-testimonial-container {
   display: flex;
   border: 1px solid #241D16;
-  width: 800px;
+  width: 1084px;
 }
 
 .detail-retainer-container {

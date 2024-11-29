@@ -70,7 +70,7 @@ const TestimonialDetail: React.FC = () => {
         <h1 className="detail-title">{companyName}</h1>
         <span className="detail-description">
           {companyDescription}
-          <a href={companyURL}>
+          <a className="detail-link-container" href={companyURL}>
             <img src="fa-link.svg" alt="Star" className="detail-link fa-link" />
           </a>
         </span>

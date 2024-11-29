@@ -98,6 +98,7 @@
 
 .icon-text-container {
   display: flex;
+  align-items: center;
 }
 
 .detail-contribution {
@@ -117,6 +118,7 @@
   margin-right: 8px;
   width: 24px;
   height: 24px;
+  padding: 5px;
 }
 
 .detail-testimonial-container {

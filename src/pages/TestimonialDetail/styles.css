@@ -82,7 +82,7 @@
 .retainer-testimonial-container {
   display: flex;
   border: 1px solid #241D16;
-  width: 1084px;
+  width: 75%;
 }
 
 .detail-retainer-container {
@@ -121,7 +121,7 @@
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  padding: 5px;
+  padding: 4px;
 }
 
 .detail-testimonial-container {
@@ -181,4 +181,23 @@
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
+}
+
+@media (max-width: 1023px) {
+  .retainer-testimonial-container {
+    flex-direction: column;
+    width: 100%;
+    border-right: 0px;
+    border-left: 0px;
+  }
+
+  .detail-retainer-container {
+    border-bottom: 1px solid #241D16;
+    border-right: 0px;
+    padding: 24px;
+  }
+
+  .detail-testimonial-container {
+    padding: 24px;
+  }
 }

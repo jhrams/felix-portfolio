@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { motion } from "motion/react"
+import { motion, useAnimate } from "motion/react"
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useNavbarHeight } from "../../context/NavbarHeightContext";
 import { TESTIMONIAL_DETAILS } from '../../copies';
@@ -11,8 +11,10 @@ const TestimonialDetail: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { navbarHeight } = useNavbarHeight();
+  const [scope, animate]  = useAnimate();
 
   useEffect(() => {
+      animate(scope.current, { y: 0, opacity: [0, 1] }, { ease: "easeInOut", duration: 0.75 });
       window.scrollTo(0, 0);
   }, [location.search]);
 
@@ -65,6 +67,7 @@ const TestimonialDetail: React.FC = () => {
       key="testimonial-detail"
       className='testimonial-detail-page'
       style={{ marginTop: `${navbarHeight}px` }}
+      ref={scope}
     >
       <div className='detail-title-container'>
         <h1 className="detail-title">{companyName}</h1>
@@ -108,7 +111,7 @@ const TestimonialDetail: React.FC = () => {
         <img className="testimonial-detail-right" src="testimonial-detail-right.svg" />
       </div>
       <div className='detail-iframe-container'>
-        <iframe style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width="800" height="450" src={figmaURL} allowFullScreen />
+        <iframe style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width="800" height="450" src={figmaURL} />
       </div>
       <div className="navigation-buttons">
         <a className="detail-button detail-prev" onClick={handlePrevClick}>Previous</a>

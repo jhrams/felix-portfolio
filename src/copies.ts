@@ -260,7 +260,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "candor-portrait.svg",
     authorName: "Kelsey Bishop",
     authorTitle: "Founder",
-    figmaURL: "https://embed.figma.com/design/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4815-8786&m=dev&embed-host=share",
+    figmaURL: "https://embed.figma.com/slides/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4815-7122&m=dev&embed-host=share&footer=false&page-selector=false",
   },
   nirvana: {
     companyName: "Nirvana",
@@ -274,7 +274,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "nirvana-portrait.svg",
     authorName: "Kelvin Chan",
     authorTitle: "Co-Founder, CPO & President ",
-    figmaURL: "",
+    figmaURL: "https://embed.figma.com/slides/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=5942-4412&m=dev&embed-host=share&footer=false&page-selector=false",
   },
   sindi: {
     companyName: "Sindi",
@@ -288,7 +288,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "sindi-portrait.svg",
     authorName: "Shane Roach",
     authorTitle: "Co-founder & CEO",
-    figmaURL: "",
+    figmaURL: "https://embed.figma.com/slides/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4831-9132&m=dev&embed-host=share&footer=false&page-selector=false",
   },
   wefunder: {
     companyName: "Wefunder",

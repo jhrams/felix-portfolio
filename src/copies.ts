@@ -260,7 +260,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "candor-portrait.svg",
     authorName: "Kelsey Bishop",
     authorTitle: "Founder",
-    figmaURL: "https://embed.figma.com/slides/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4815-7122&m=dev&embed-host=share&footer=false&page-selector=false",
+    figmaURL: "https://embed.figma.com/proto/ogiXj0XyM8vX6YpPUTA6YJ/Candor?page-id=0%3A1&node-id=1-2387&node-type=canvas&viewport=630%2C376%2C0.12&scaling=fit-width&content-scaling=fixed&starting-point-node-id=1%3A2387&embed-host=share&footer=false"
   },
   nirvana: {
     companyName: "Nirvana",
@@ -274,7 +274,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "nirvana-portrait.svg",
     authorName: "Kelvin Chan",
     authorTitle: "Co-Founder, CPO & President ",
-    figmaURL: "https://embed.figma.com/slides/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=5942-4412&m=dev&embed-host=share&footer=false&page-selector=false",
+    figmaURL: "https://embed.figma.com/proto/ETJnOPIZ7nQoZ08fv0sJO3/Nirvana-Demo?page-id=0%3A1&node-id=3-3691&node-type=frame&viewport=1475%2C923%2C0.75&scaling=contain&content-scaling=fixed&starting-point-node-id=3%3A3691&embed-host=share&footer=false",
   },
   sindi: {
     companyName: "Sindi",
@@ -288,7 +288,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "sindi-portrait.svg",
     authorName: "Shane Roach",
     authorTitle: "Co-founder & CEO",
-    figmaURL: "https://embed.figma.com/slides/Bcrcns9mBUKU2Yx8jtmT9I/Felix-Lau-Work?node-id=4831-9132&m=dev&embed-host=share&footer=false&page-selector=false",
+    figmaURL: "https://embed.figma.com/proto/xhFy0pNlc4J3CXdzXYdN20/Sindi-Demo?page-id=0%3A1&node-id=1-1613&node-type=instance&viewport=1211%2C339%2C0.22&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1613&embed-host=share&footer=false",
   },
   wefunder: {
     companyName: "Wefunder",
@@ -302,7 +302,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "wefunder-portrait.svg",
     authorName: "Geena Chen",
     authorTitle: "Product Lead",
-    figmaURL: "",
+    figmaURL: "https://embed.figma.com/proto/qoYpa61bj6rVoIPfgjS57W/Wefunder-Demo?page-id=0%3A1&node-id=1-1852&node-type=canvas&viewport=507%2C98%2C0.14&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1852&embed-host=share&footer=false",
   },
   castmagic: {
     companyName: "Castmagic",
@@ -330,7 +330,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "atlas-portrait.svg",
     authorName: "Vetri Balaji",
     authorTitle: "Co-founder & CTO",
-    figmaURL: "",
+    figmaURL: "https://embed.figma.com/proto/To7fzYK0RYsKPEaOfpyUm0/Atlas-Demo?page-id=0%3A1&node-id=2-1185&node-type=frame&viewport=628%2C207%2C0.47&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A1185&embed-host=share&footer=false",
   },
 }
 

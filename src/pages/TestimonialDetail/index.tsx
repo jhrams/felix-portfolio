@@ -111,7 +111,7 @@ const TestimonialDetail: React.FC = () => {
         <img className="testimonial-detail-right" src="testimonial-detail-right.svg" />
       </div>
       <div className='detail-iframe-container'>
-        <iframe style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width="800" height="450" src={figmaURL} />
+        <iframe src={figmaURL} />
       </div>
       <div className="navigation-buttons">
         <a className="detail-button detail-prev" onClick={handlePrevClick}>Previous</a>

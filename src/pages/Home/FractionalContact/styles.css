@@ -47,7 +47,7 @@
   position: absolute;
   z-index: 0;
   right: -119px;
-  top: -33px;
+  top: -20px;
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -137,5 +137,13 @@
 @media (min-width: 1440px) {
   .fractional-contact-l-right-dot {
     display: none;
+  }
+
+  .fractional-contact-xl-right-dot {
+    right: -119px;
+    object-fit: none;
+    object-position: right;
+    width: 291px;
+    height: 453.87px;
   }
 }

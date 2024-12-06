@@ -17,7 +17,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
 
   return (
     <div className="faq-item">
-      <h3 onClick={toggleAccordion} className="faq-question">
+      <h3 onClick={toggleAccordion} className="faq-question" >
         {question}
         <span className="faq-icon">
           {isOpen ? <img src="minus.svg" alt="minus" /> : <img src="plus.svg" alt="plus" />}
@@ -26,7 +26,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
       <div className={`faq-answer ${isOpen ? 'open' : ''}`}>
         {renderText(answer)}
       </div>
-    </div>
+    </div >
   );
 };
 

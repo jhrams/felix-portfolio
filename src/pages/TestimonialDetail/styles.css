@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .testimonial-detail-page>* {
@@ -204,7 +205,9 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .retainer-testimonial-container, .detail-iframe-container {
+
+  .retainer-testimonial-container,
+  .detail-iframe-container {
     margin-right: 24px;
     margin-left: 24px;
   }
@@ -249,8 +252,10 @@
 
 .svg-sequence-container {
   position: relative;
-  width: 100%; /* Set the width of your SVGs */
-  height: 100%; /* Set the height of your SVGs */
+  width: 100%;
+  /* Set the width of your SVGs */
+  height: 100%;
+  /* Set the height of your SVGs */
 }
 
 .svg-wrapper {
@@ -267,5 +272,6 @@
 
 .svg-wrapper.active {
   opacity: 1;
-  transform: scale(1); /* Ending state for animation */
+  transform: scale(1);
+  /* Ending state for animation */
 }

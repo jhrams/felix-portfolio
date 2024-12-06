@@ -46,6 +46,7 @@
   font-weight: 400;
   line-height: 14px;
   margin: 0;
+  cursor: pointer;
 }
 
 .faq-answer {

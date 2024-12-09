@@ -9,7 +9,7 @@ footer {
   font-family: 'Satoshi', sans-serif;
   line-height: 19px;
   z-index: 500;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .footer-title {

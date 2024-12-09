@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  flex: 1;
 }
 
 .structure-bottom-dots {

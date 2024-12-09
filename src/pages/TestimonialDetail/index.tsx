@@ -6,6 +6,7 @@ import { TESTIMONIAL_DETAILS } from '../../copies';
 
 import "./styles.css"
 import { getElementByIndex } from "../../utils";
+import SvgSequence from "./SvgSequence";
 
 const TestimonialDetail: React.FC = () => {
   const location = useLocation();
@@ -111,7 +112,7 @@ const TestimonialDetail: React.FC = () => {
         <img className="testimonial-detail-right" src="testimonial-detail-right.svg" />
       </div>
       <div className='detail-iframe-container'>
-        <iframe src={figmaURL} />
+        {figmaURL ? <iframe src={figmaURL} /> : <SvgSequence svgs={["candor-testimonial-1.svg", "candor-testimonial-2.svg", "candor-testimonial-3.svg", "candor-testimonial-4.svg", "candor-testimonial-5.svg"]} />}
       </div>
       <div className="navigation-buttons">
         <a className="detail-button detail-prev" onClick={handlePrevClick}>Previous</a>

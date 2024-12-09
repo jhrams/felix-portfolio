@@ -260,7 +260,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "candor-portrait.svg",
     authorName: "Kelsey Bishop",
     authorTitle: "Founder",
-    figmaURL: "https://embed.figma.com/proto/ogiXj0XyM8vX6YpPUTA6YJ/Candor?page-id=0%3A1&node-id=1-2387&node-type=canvas&viewport=630%2C376%2C0.12&scaling=fit-width&content-scaling=fixed&starting-point-node-id=1%3A2387&embed-host=share&footer=false"
+    figmaURL: ""
   },
   nirvana: {
     companyName: "Nirvana",

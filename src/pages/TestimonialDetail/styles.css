@@ -86,7 +86,7 @@
 .detail-iframe-container {
   display: flex;
   width: 75%;
-  aspect-ratio: 100 / 59.0;
+  aspect-ratio: 100 / 60.694;
 
   iframe {
     width: 100%;
@@ -245,4 +245,27 @@
   .testimonial-detail-right {
     display: none;
   }
+}
+
+.svg-sequence-container {
+  position: relative;
+  width: 100%; /* Set the width of your SVGs */
+  height: 100%; /* Set the height of your SVGs */
+}
+
+.svg-wrapper {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.svg-wrapper.active {
+  opacity: 1;
+  transform: scale(1); /* Ending state for animation */
 }

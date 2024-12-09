@@ -12,11 +12,11 @@ const TestimonialDetail: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { navbarHeight } = useNavbarHeight();
-  const [scope, animate]  = useAnimate();
+  const [scope, animate] = useAnimate();
 
   useEffect(() => {
-      animate(scope.current, { y: 0, opacity: [0, 1] }, { ease: "easeInOut", duration: 0.75 });
-      window.scrollTo(0, 0);
+    animate(scope.current, { y: 0, opacity: [0, 1] }, { ease: "easeInOut", duration: 0.75 });
+    window.scrollTo(0, 0);
   }, [location.search]);
 
   const queryParams = new URLSearchParams(location.search);
@@ -57,7 +57,8 @@ const TestimonialDetail: React.FC = () => {
     authorPic,
     authorName,
     authorTitle,
-    figmaURL
+    figmaURL,
+    svgSequences
   } = testimonialDetail;
 
   return (
@@ -112,7 +113,7 @@ const TestimonialDetail: React.FC = () => {
         <img className="testimonial-detail-right" src="testimonial-detail-right.svg" />
       </div>
       <div className='detail-iframe-container'>
-        {figmaURL ? <iframe src={figmaURL} /> : <SvgSequence svgs={["candor-testimonial-1.svg", "candor-testimonial-2.svg", "candor-testimonial-3.svg", "candor-testimonial-4.svg", "candor-testimonial-5.svg"]} />}
+        {figmaURL ? <iframe src={figmaURL} /> : <SvgSequence svgs={svgSequences} />}
       </div>
       <div className="navigation-buttons">
         <a className="detail-button detail-prev" onClick={handlePrevClick}>Previous</a>

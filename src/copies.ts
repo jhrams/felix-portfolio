@@ -269,7 +269,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
   nirvana: {
     companyName: "Nirvana",
     companyDescription: "A high-touch recruiting service for US startups looking to hire abroad",
-    companyURL: "",
+    companyURL: "https://www.meetnirvana.com/",
     duration: "Aug 2022 - Present",
     collaborators: "Collaborators: CPO, 1 PM, 1 Eng",
     structureType: "Monthly retainer",
@@ -286,7 +286,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
   sindi: {
     companyName: "Sindi",
     companyDescription: "Modernizing dental referral forms, file transfers and communication",
-    companyURL: "",
+    companyURL: "https://www.sindireferrals.com/",
     duration: "July 2023 - Present",
     collaborators: "Collaborator: Co-founder",
     structureType: "Hourly",
@@ -302,7 +302,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
   wefunder: {
     companyName: "Wefunder",
     companyDescription: "Meaningful community fundraising for both investors and founders",
-    companyURL: "",
+    companyURL: "https://wefunder.com/",
     duration: "September 2023 - Present",
     collaborators: "Collaborators: 2 PMs, 2-3 Eng",
     structureType: "Hourly with minimum retainer",
@@ -318,7 +318,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
   castmagic: {
     companyName: "Castmagic",
     companyDescription: "Automagically turning media into any kind of static/written content",
-    companyURL: "",
+    companyURL: "https://www.castmagic.io/",
     duration: "March 2024 - Oct 2024",
     collaborators: "Collaborator: Co-founder",
     structureType: "Monthly retainer",
@@ -334,7 +334,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
   atlas: {
     companyName: "Atlas",
     companyDescription: "An accessible credit building product",
-    companyURL: "",
+    companyURL: "https://www.atlasfin.com/",
     duration: "Jun 2023 - Jan 2024",
     collaborators: "Collaborators: 2 Co-founders, 1-2 Eng",
     structureType: "Monthly retainer",

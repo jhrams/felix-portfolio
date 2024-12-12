@@ -261,7 +261,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "candor-portrait.svg",
     authorName: "Kelsey Bishop",
     authorTitle: "Founder",
-    figmaURL: "",
+    figmaURL: "https://embed.figma.com/proto/ogiXj0XyM8vX6YpPUTA6YJ/Candor?page-id=0%3A1&node-id=1-2387&node-type=canvas&viewport=630%2C376%2C0.12&scaling=fit-width&content-scaling=fixed&starting-point-node-id=1%3A2387&embed-host=share&footer=false",
     svgSequences: ["candor-testimonial-1.svg", "candor-testimonial-2.svg", "candor-testimonial-3.svg", "candor-testimonial-4.svg", "candor-testimonial-5.svg"],
   },
   nirvana: {
@@ -292,7 +292,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "sindi-portrait.svg",
     authorName: "Shane Roach",
     authorTitle: "Co-founder & CEO",
-    figmaURL: "",
+    figmaURL: "https://embed.figma.com/proto/xhFy0pNlc4J3CXdzXYdN20/Sindi-Demo?page-id=0%3A1&node-id=1-1613&node-type=instance&viewport=1211%2C339%2C0.22&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1613&embed-host=share&footer=false",
     svgSequences: ["sindi-testimonial-1.svg", "sindi-testimonial-2.svg", "sindi-testimonial-3.svg", "sindi-testimonial-4.svg", "sindi-testimonial-5.svg", "sindi-testimonial-6.svg"],
   },
   wefunder: {

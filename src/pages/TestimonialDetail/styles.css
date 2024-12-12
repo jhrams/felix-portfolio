@@ -87,7 +87,6 @@
 .detail-iframe-container {
   display: flex;
   width: 75%;
-  aspect-ratio: 100 / 60.694;
 
   iframe {
     width: 100%;

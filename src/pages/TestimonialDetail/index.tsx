@@ -58,7 +58,8 @@ const TestimonialDetail: React.FC = () => {
     authorName,
     authorTitle,
     figmaURL,
-    svgSequences
+    svgSequences,
+    aspectRatio,
   } = testimonialDetail;
 
   return (
@@ -112,7 +113,7 @@ const TestimonialDetail: React.FC = () => {
         <img className="testimonial-detail-left" src="testimonial-detail-left.svg" />
         <img className="testimonial-detail-right" src="testimonial-detail-right.svg" />
       </div>
-      <div className='detail-iframe-container'>
+      <div className='detail-iframe-container' style={{ aspectRatio: aspectRatio ? aspectRatio : "100 / 60.694" }}>
         {svgSequences.length ? <SvgSequence svgs={svgSequences} /> : <iframe src={figmaURL} />}
       </div>
       <div className="navigation-buttons">

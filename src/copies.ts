@@ -37,6 +37,7 @@ interface TestimonialDetail {
   authorTitle: string;
   figmaURL: string;
   svgSequences: string[];
+  aspectRatio?: string;
 }
 
 const NAV_TITLE: string = 'FELIX.DESIGN';
@@ -263,6 +264,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorTitle: "Founder",
     figmaURL: "https://embed.figma.com/proto/ogiXj0XyM8vX6YpPUTA6YJ/Candor?page-id=0%3A1&node-id=1-2387&node-type=canvas&viewport=630%2C376%2C0.12&scaling=fit-width&content-scaling=fixed&starting-point-node-id=1%3A2387&embed-host=share&footer=false",
     svgSequences: ["candor-testimonial-1.svg", "candor-testimonial-2.svg", "candor-testimonial-3.svg", "candor-testimonial-4.svg", "candor-testimonial-5.svg"],
+    aspectRatio: "100 / 60.694",
   },
   nirvana: {
     companyName: "Nirvana",
@@ -278,6 +280,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorTitle: "Co-Founder, CPO & President ",
     figmaURL: "https://embed.figma.com/proto/ETJnOPIZ7nQoZ08fv0sJO3/Nirvana-Demo?page-id=0%3A1&node-id=3-3691&node-type=frame&viewport=1475%2C923%2C0.75&scaling=contain&content-scaling=fixed&starting-point-node-id=3%3A3691&embed-host=share&footer=false",
     svgSequences: ["nirvana-testimonial-1.svg", "nirvana-testimonial-2.svg",],
+    aspectRatio: "100 / 62.5",
 
   },
   sindi: {
@@ -294,6 +297,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorTitle: "Co-founder & CEO",
     figmaURL: "https://embed.figma.com/proto/xhFy0pNlc4J3CXdzXYdN20/Sindi-Demo?page-id=0%3A1&node-id=1-1613&node-type=instance&viewport=1211%2C339%2C0.22&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1613&embed-host=share&footer=false",
     svgSequences: ["sindi-testimonial-1.svg", "sindi-testimonial-2.svg", "sindi-testimonial-3.svg", "sindi-testimonial-4.svg", "sindi-testimonial-5.svg", "sindi-testimonial-6.svg"],
+    aspectRatio: "100 / 55.556",
   },
   wefunder: {
     companyName: "Wefunder",
@@ -309,6 +313,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorTitle: "Product Lead",
     figmaURL: "",
     svgSequences: ["wefunder-testimonial-1.svg", "wefunder-testimonial-2.svg", "wefunder-testimonial-3.svg", "wefunder-testimonial-4.svg", "wefunder-testimonial-5.svg", "wefunder-testimonial-6.svg"],
+    aspectRatio: "100 / 60",
   },
   castmagic: {
     companyName: "Castmagic",
@@ -324,6 +329,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorTitle: "Co-founder",
     figmaURL: "",
     svgSequences: ["castmagic-testimonial-1.svg"],
+    aspectRatio: "100 / 62.454",
   },
   atlas: {
     companyName: "Atlas",

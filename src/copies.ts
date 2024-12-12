@@ -277,7 +277,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorName: "Kelvin Chan",
     authorTitle: "Co-Founder, CPO & President ",
     figmaURL: "https://embed.figma.com/proto/ETJnOPIZ7nQoZ08fv0sJO3/Nirvana-Demo?page-id=0%3A1&node-id=3-3691&node-type=frame&viewport=1475%2C923%2C0.75&scaling=contain&content-scaling=fixed&starting-point-node-id=3%3A3691&embed-host=share&footer=false",
-    svgSequences: [],
+    svgSequences: ["nirvana-testimonial-1.svg", "nirvana-testimonial-2.svg",],
 
   },
   sindi: {
@@ -323,7 +323,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorName: "Blaine Bolus",
     authorTitle: "Co-founder",
     figmaURL: "",
-    svgSequences: [],
+    svgSequences: ["castmagic-testimonial-1.svg"],
   },
   atlas: {
     companyName: "Atlas",

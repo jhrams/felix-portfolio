@@ -307,8 +307,8 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "wefunder-portrait.svg",
     authorName: "Geena Chen",
     authorTitle: "Product Lead",
-    figmaURL: "https://embed.figma.com/proto/qoYpa61bj6rVoIPfgjS57W/Wefunder-Demo?page-id=0%3A1&node-id=1-1852&node-type=canvas&viewport=507%2C98%2C0.14&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1852&embed-host=share&footer=false",
-    svgSequences: [],
+    figmaURL: "",
+    svgSequences: ["wefunder-testimonial-1.svg", "wefunder-testimonial-2.svg", "wefunder-testimonial-3.svg", "wefunder-testimonial-4.svg", "wefunder-testimonial-5.svg", "wefunder-testimonial-6.svg"],
   },
   castmagic: {
     companyName: "Castmagic",

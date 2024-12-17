@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="341" height="488" fill="none"><path fill="url(#a)" d="M0 0h341v487H0z" opacity=".21" transform="translate(0 .913)"/><defs><pattern id="a" width=".018" height=".012" patternContentUnits="objectBoundingBox"><use xlink:href="#b" transform="scale(.0022 .00154)"/></pattern><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAABdJREFUGBljYGBg+A/FQAoTMGEKDUcRAATwAgFGIXEOAAAAAElFTkSuQmCC" id="b" width="8" height="8"/></defs></svg>
+<svg width="341" height="488" viewBox="0 0 341 488" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.21">
+<rect width="341" height="487" transform="translate(0 0.913086)" fill="url(#pattern0_5951_6451)"/>
+</g>
+<defs>
+<pattern id="pattern0_5951_6451" patternContentUnits="objectBoundingBox" width="0.0175953" height="0.0123203">
+<use xlink:href="#image0_5951_6451" transform="scale(0.00219941 0.00154004)"/>
+</pattern>
+<image id="image0_5951_6451" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAABdJREFUGBljYGBg+A/FQAoTMGEKDUcRAATwAgFGIXEOAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

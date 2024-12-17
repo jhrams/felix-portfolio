@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   color: white;
-  background: lightgray linear-gradient(155deg, #241D16 67%, rgba(36, 29, 22, 0.00) 175.32%) 50% / cover no-repeat;
   padding: 56px 80px;
   margin: 40px 80px;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/hero-background.svg);
 }
 
 .about-title {

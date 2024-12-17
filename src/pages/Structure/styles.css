@@ -51,21 +51,9 @@
   width: 75%;
   color: white;
   padding: 40px 32px;
-  background: linear-gradient(155deg, #241D16 67%, rgba(36, 29, 22, 0.00) 175.32%);
-  position: relative;
-}
-
-.retainer-box::before {
-  content: "";
-  background: url("/hero-background.png") lightgray 50% / cover no-repeat;
-  background-size: auto;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.33;
-  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/hero-background.svg);
 }
 
 .retainer-title-container {

@@ -1,5 +1,4 @@
 .fractional-contact {
-  background: lightgray linear-gradient(155deg, #241D16 67%, rgba(36, 29, 22, 0.00) 175.32%) 50% / cover no-repeat;
   color: white;
   padding: 80px;
   margin: 80px 120px;
@@ -7,6 +6,9 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/hero-background.svg);
 }
 
 .fractional-contact h2 {

@@ -10,7 +10,7 @@ import "./styles.css"
 const ProfileHeader: React.FC = () => (
   <>
     <div className="profile-header">
-      <img src="profile-with-layer.svg" alt="Profile" className="profile" />
+      <img src="profile-with-layer.png" alt="Profile" className="profile" />
       <h1>{HOME_TITLE}</h1>
       <p>{HOME_DESCRIPTION}</p>
       <a href={`${BASE_URL}/#/contact`} className="button contact-button">{LETS_WORK_TOGETHER}</a>

@@ -53,6 +53,9 @@
 }
 
 .detail-description {
+  margin-left: 24px;
+  margin-right: 24px;
+
   display: flex;
   align-items: center;
   color: #241D16;
@@ -240,6 +243,19 @@
 
   .detail-testimonial-container {
     padding: 24px;
+  }
+
+  .detail-title {
+    font-size: 39px;
+    letter-spacing: -0.2px;
+    line-height: 47px;
+
+    margin-bottom: 16px;
+  }
+
+  .detail-description {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

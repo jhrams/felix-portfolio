@@ -38,6 +38,7 @@ interface TestimonialDetail {
   figmaURL: string;
   svgSequences: string[];
   aspectRatio?: string;
+  isMobile?: boolean;
 }
 
 const NAV_TITLE: string = 'FELIX.DESIGN';
@@ -262,7 +263,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "candor-portrait.svg",
     authorName: "Kelsey Bishop",
     authorTitle: "Founder",
-    figmaURL: "https://embed.figma.com/proto/ogiXj0XyM8vX6YpPUTA6YJ/Candor?page-id=0%3A1&node-id=1-2387&node-type=canvas&viewport=630%2C376%2C0.12&scaling=fit-width&content-scaling=fixed&starting-point-node-id=1%3A2387&embed-host=share&footer=false",
+    figmaURL: "",
     svgSequences: ["candor-testimonial-1.svg", "candor-testimonial-2.svg", "candor-testimonial-3.svg", "candor-testimonial-4.svg", "candor-testimonial-5.svg"],
     aspectRatio: "100 / 60.694",
   },
@@ -278,7 +279,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "nirvana-portrait.svg",
     authorName: "Kelvin Chan",
     authorTitle: "Co-Founder, CPO & President ",
-    figmaURL: "https://embed.figma.com/proto/ETJnOPIZ7nQoZ08fv0sJO3/Nirvana-Demo?page-id=0%3A1&node-id=3-3691&node-type=frame&viewport=1475%2C923%2C0.75&scaling=contain&content-scaling=fixed&starting-point-node-id=3%3A3691&embed-host=share&footer=false",
+    figmaURL: "",
     svgSequences: ["nirvana-testimonial-1.svg", "nirvana-testimonial-2.svg",],
     aspectRatio: "100 / 62.5",
 
@@ -295,7 +296,7 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "sindi-portrait.svg",
     authorName: "Shane Roach",
     authorTitle: "Co-founder & CEO",
-    figmaURL: "https://embed.figma.com/proto/xhFy0pNlc4J3CXdzXYdN20/Sindi-Demo?page-id=0%3A1&node-id=1-1613&node-type=instance&viewport=1211%2C339%2C0.22&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1613&embed-host=share&footer=false",
+    figmaURL: "",
     svgSequences: ["sindi-testimonial-1.svg", "sindi-testimonial-2.svg", "sindi-testimonial-3.svg", "sindi-testimonial-4.svg", "sindi-testimonial-5.svg", "sindi-testimonial-6.svg"],
     aspectRatio: "100 / 55.556",
   },
@@ -343,8 +344,10 @@ const TESTIMONIAL_DETAILS: { [key: string]: TestimonialDetail } = {
     authorPic: "atlas-portrait.svg",
     authorName: "Vetri Balaji",
     authorTitle: "Co-founder & CTO",
-    figmaURL: "https://embed.figma.com/proto/To7fzYK0RYsKPEaOfpyUm0/Atlas-Demo?page-id=0%3A1&node-id=2-1185&node-type=frame&viewport=628%2C207%2C0.47&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A1185&embed-host=share&footer=false",
-    svgSequences: [],
+    figmaURL: "",
+    svgSequences: ["atlas-testimonial-1.svg", "atlas-testimonial-2.svg"],
+    aspectRatio: "45.95 / 100",
+    isMobile: true,
   },
 }
 

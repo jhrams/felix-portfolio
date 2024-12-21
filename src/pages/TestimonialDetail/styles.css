@@ -88,6 +88,10 @@
   display: flex;
   width: 75%;
 
+  &.isMobile {
+    width: 29%;
+  }
+
   iframe {
     width: 100%;
   }

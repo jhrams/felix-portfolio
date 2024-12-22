@@ -259,12 +259,14 @@
   }
 }
 
-@media (max-width: 480px) {
-  .testimonial-detail-left {
+@media (max-width: 680px) {
+  .testimonial-detail-right {
     display: none;
   }
+}
 
-  .testimonial-detail-right {
+@media (max-width: 480px) {
+  .testimonial-detail-left {
     display: none;
   }
 }
@@ -272,9 +274,7 @@
 .svg-sequence-container {
   position: relative;
   width: 100%;
-  /* Set the width of your SVGs */
   height: 100%;
-  /* Set the height of your SVGs */
 }
 
 .svg-wrapper {
@@ -291,6 +291,4 @@
 
 .svg-wrapper.active {
   opacity: 1;
-  transform: scale(1);
-  /* Ending state for animation */
 }

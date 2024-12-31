@@ -92,7 +92,7 @@
   width: 75%;
 
   &.isMobile {
-    width: 29%;
+    width: 33%;
   }
 
   iframe {
@@ -270,7 +270,7 @@
 
   .detail-iframe-container {
     &.isMobile {
-      width: 100%;
+      width: 66%;
     }
   }
 }

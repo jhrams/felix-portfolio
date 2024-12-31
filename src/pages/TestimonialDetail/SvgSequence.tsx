@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./styles.css"
 
-const SvgSequence = ({ svgs }: { svgs: string[] }) => {
+const SvgSequence = ({ svgs, aspectRatio }: { svgs: string[], aspectRatio: string | undefined }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const SvgSequence = ({ svgs }: { svgs: string[] }) => {
   }, [currentIndex, svgs.length]);
 
   return (
-    <div className="svg-sequence-container">
+    <div className="svg-sequence-container" style={{ aspectRatio: aspectRatio ? aspectRatio : "100 / 60.694" }}>
       {svgs.map((svg, index) => (
         <div
           key={index}

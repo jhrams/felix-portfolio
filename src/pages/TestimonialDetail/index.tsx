@@ -114,8 +114,8 @@ const TestimonialDetail: React.FC = () => {
         <img className="testimonial-detail-left" src="testimonial-detail-left.svg" />
         <img className="testimonial-detail-right" src="testimonial-detail-right.svg" />
       </div>
-      <div className={`detail-iframe-container ${isMobile ? "isMobile" : ""}`} style={{ aspectRatio: aspectRatio ? aspectRatio : "100 / 60.694" }}>
-        {svgSequences.length ? <SvgSequence svgs={svgSequences} /> : <iframe src={figmaURL} />}
+      <div className={`detail-iframe-container ${isMobile ? "isMobile" : ""}`}>
+        {svgSequences.length ? <SvgSequence svgs={svgSequences} aspectRatio={aspectRatio} /> : <iframe src={figmaURL} />}
       </div>
       <div className="navigation-buttons">
         <a className="detail-button detail-prev" onClick={handlePrevClick}>Previous</a>

@@ -52,6 +52,10 @@
   cursor: pointer;
 }
 
+.detail-button:hover {
+  opacity: 0.5;
+}
+
 .detail-description {
   margin-left: 24px;
   margin-right: 24px;

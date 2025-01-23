@@ -135,6 +135,10 @@
   margin-bottom: 24px;
 }
 
+.arrow:hover {
+  opacity: 0.5;
+}
+
 @media (min-width: 1024px) and (max-width: 1439px) {
   .testimonials {
     padding: 24px 40px;
